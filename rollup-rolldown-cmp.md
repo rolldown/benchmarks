@@ -84,3 +84,19 @@ Summary
   'node --run build:rolldown' ran
    19.93 ± 0.88 times faster than 'node --run build:rollup'
 ```
+
+# apps/html2canvas
+```bash
+Benchmark 1: node --run build:rolldown
+  Time (mean ± σ):      93.5 ms ±   1.6 ms    [User: 138.3 ms, System: 65.3 ms]
+  Range (min … max):    92.2 ms …  95.3 ms    3 runs
+ 
+Benchmark 2: node --run build:rollup
+  Time (mean ± σ):      1.835 s ±  0.011 s    [User: 4.100 s, System: 0.294 s]
+  Range (min … max):    1.823 s …  1.844 s    3 runs
+ 
+Summary
+  'node --run build:rolldown' ran
+   19.63 ± 0.35 times faster than 'node --run build:rollup'
+
+```

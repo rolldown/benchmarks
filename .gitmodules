@@ -1,0 +1,6 @@
+[submodule "apps/i18n"]
+	path = apps/i18n
+	url = git@github.com:nuxt-modules/i18n.git
+[submodule "apps/html2canvas"]
+	path = apps/html2canvas
+	url = git@github.com:niklasvh/html2canvas.git
