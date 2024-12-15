@@ -1,0 +1,15 @@
+{
+  "name": "three10x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:rolldown": "rolldown build --config rolldown.config.mjs",
+    "build:rollup": "rollup --config rollup.config.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}

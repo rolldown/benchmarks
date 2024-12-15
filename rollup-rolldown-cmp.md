@@ -62,3 +62,25 @@ Summary
   'node --run build:rolldown' ran
    38.51 ± 1.20 times faster than 'node --run build:rollup'
 ```
+
+# apps/three10x
+```bash
+
+Benchmark 1: node --run build:rolldown
+  Time (mean ± σ):     323.1 ms ±  12.3 ms    [User: 1384.8 ms, System: 470.9 ms]
+  Range (min … max):   308.9 ms … 330.7 ms    3 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepar
+e' options.
+ 
+Benchmark 2: node --run build:rollup
+  Time (mean ± σ):      6.440 s ±  0.144 s    [User: 9.942 s, System: 1.188 s]
+  Range (min … max):    6.350 s …  6.607 s    3 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepar
+e' options.
+ 
+Summary
+  'node --run build:rolldown' ran
+   19.93 ± 0.88 times faster than 'node --run build:rollup'
+```
