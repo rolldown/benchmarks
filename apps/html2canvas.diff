@@ -1,0 +1,65 @@
+diff --git a/examples/demo.html b/examples/demo.html
+index 54882cc..d55a6a6 100644
+--- a/examples/demo.html
++++ b/examples/demo.html
+@@ -171,7 +171,7 @@
+     <p style="color: black; font-size: 1em; line-height: 1.3em; clear: both">
+       This is a nonsensical document, but syntactically valid HTML 4.0. All 100% conformant CSS1 agents should be able to render the document elements above this paragraph <b>indistinguishably</b> (to the pixel) from this reference rendering, (except font rasterization and form widgets). All discrepancies should be traceable to CSS1 implementation shortcomings. Once you have finished evaluating this test, you can return to the <A HREF="sec5526c.htm" style="text-decoration:none">parent page</A>.
+     </p>
+-    <script type="text/javascript" src="../dist/html2canvas.js"></script>
++    <script type="text/javascript" src="./html2canvas.js"></script>
+     <script type="text/javascript">
+         html2canvas(document.body).then(function(canvas) {
+             document.body.appendChild(canvas);
+diff --git a/package-lock.json b/package-lock.json
+index f972f71..0ba01d0 100644
+--- a/package-lock.json
++++ b/package-lock.json
+@@ -5,7 +5,8 @@
+   "requires": true,
+   "packages": {
+     "": {
+-      "version": "1.4.0",
++      "name": "html2canvas",
++      "version": "1.4.1",
+       "license": "MIT",
+       "dependencies": {
+         "css-line-break": "^2.1.0",
+diff --git a/package.json b/package.json
+index cefd436..2a62a1e 100644
+--- a/package.json
++++ b/package.json
+@@ -97,6 +97,8 @@
+     "yargs": "^17.0.1"
+   },
+   "scripts": {
++    "build:rollup": "rollup -c rollup.config.ts",
++    "build:rolldown": "rolldown build -c rolldown.config.mjs",
+     "prebuild": "rimraf dist/ && rimraf build/ && mkdirp dist && mkdirp build",
+     "build": "tsc --module commonjs && rollup -c rollup.config.ts && npm run build:create-reftest-list && npm run build:testrunner && npm run build:minify",
+     "build:testrunner": "rollup -c tests/rollup.config.ts",
+diff --git a/rollup.config.ts b/rollup.config.ts
+index 13bf9a6..de12716 100644
+--- a/rollup.config.ts
++++ b/rollup.config.ts
+@@ -15,7 +15,6 @@ const banner = `/*!
+ export default {
+     input: `src/index.ts`,
+     output: [
+-        { file: pkg.main, name: pkg.name, format: 'umd', banner, sourcemap: true },
+         { file: pkg.module, format: 'esm', banner, sourcemap: true },
+     ],
+     external: [],
+diff --git a/tsconfig.json b/tsconfig.json
+index 82e2959..cfd71e2 100644
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -7,7 +7,7 @@
+         "strictNullChecks": true,
+         "strictPropertyInitialization": true,
+         "types": ["node", "jest"],
+-        "target": "es5",
++        "target": "es6",
+         "lib": ["es2015", "dom"],
+         "sourceMap": true,
+         "outDir": "dist/lib",
