@@ -249,14 +249,12 @@ Summary
     3.39 ± 0.05 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
 ```
 
-*output size*
+*output size(bytes)*
 
-```
-recordMap:  {
-  '1000': { rspack: '756.22', rollup: '832.98', rolldown: '776.86' },
-  '3000': { rspack: '1687.70', rollup: '1849.40', rolldown: '1734.71' },
-  '5000': { rspack: '2528.33', rollup: '2786.24', rolldown: '2611.44' },
-  '10000': { rspack: '5360.06', rollup: '5901.10', rolldown: '5521.27' },
-  three10x: { rspack: '5742.20', rollup: '5862.98', rolldown: '5885.65' }
-}
-```
+| CaseName     | RSPack  | Rollup  | Rolldown |
+|----------|---------|---------|----------|
+| 1000     | 756.22  | 832.98  | 776.86   |
+| 3000     | 1687.70 | 1849.40 | 1734.71  |
+| 5000     | 2528.33 | 2786.24 | 2611.44  |
+| 10000    | 5360.06 | 5901.10 | 5521.27  |
+| three10x | 5742.20 | 5862.98 | 5885.65  |
