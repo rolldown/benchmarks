@@ -5,7 +5,7 @@ const minify = !!process.env.MINIFY;
 
 export default defineConfig({
 	entry: "./entry.js",
-	devtool: false,
+	devtool: sourceMap ? "source-map" : false,
 	target: ["web", "es2022"],
 	output: {
 		path: "rspack-dist",
@@ -13,10 +13,40 @@ export default defineConfig({
 		clean: false,
 	},
 	resolve: {
-		extensions: [".js"],
+		extensions: [".js", ".jsx"],
 	},
-	optimization: {
-		minimize: minify,
+  optimization: {
+    minimize: minify
+  },
+	module: {
+		rules: [
+			{
+				test: /\.jsx$/,
+				use: {
+					loader: "builtin:swc-loader",
+					options: {
+						jsc: {
+							parser: {
+								syntax: "ecmascript",
+								jsx: true,
+							},
+							transform: {
+								react: {
+									pragma: "React.createElement",
+									pragmaFrag: "React.Fragment",
+									throwIfNamespace: true,
+									development: false,
+									useBuiltins: false,
+								},
+							},
+						},
+					},
+				},
+				type: "javascript/auto",
+			},
+		],
 	},
-	module: {},
 });
+
+
+

@@ -26,7 +26,6 @@ export default defineConfig({
 					loader: "builtin:swc-loader",
 					options: {
 						jsc: {
-              target: "es2022",
 							parser: {
 								syntax: "ecmascript",
 								jsx: true,
@@ -48,4 +47,5 @@ export default defineConfig({
 		],
 	},
 });
+
 

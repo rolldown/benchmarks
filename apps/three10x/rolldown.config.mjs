@@ -1,7 +1,7 @@
 import { defineConfig } from "rolldown";
-
-const sourceMap = !!process.env.SOURCE_MAP
-const minify = !!process.env.MINIFY
+import { minify } from "rollup-plugin-swc3";
+const sourceMap = !!process.env.SOURCE_MAP;
+const m = !!process.env.MINIFY;
 
 export default defineConfig({
 	input: {
@@ -10,9 +10,25 @@ export default defineConfig({
 	define: {
 		"process.env.NODE_ENV": JSON.stringify("production"),
 	},
+	plugins: [
+		m
+			? minify({
+					module: true,
+					// swc's minify option here
+					mangle: {
+						toplevel: true,
+					},
+					compress: {},
+				})
+			: null,
+	].filter(Boolean),
+	profilerNames: !m,
 	output: {
-		minify: minify,
-    sourcemap: sourceMap,
-    dir: "rolldown-dist"
+		minify: false,
+		sourcemap: sourceMap,
+		dir: "rolldown-dist",
 	},
 });
+
+
+

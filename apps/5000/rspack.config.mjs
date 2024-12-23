@@ -5,7 +5,7 @@ const minify = !!process.env.MINIFY;
 
 export default defineConfig({
 	entry: "./src/index.jsx",
-	devtool: false,
+	devtool: sourceMap ? "source-map" : false,
 	target: ["web", "es2022"],
 	output: {
 		path: "rspack-dist",
@@ -47,3 +47,5 @@ export default defineConfig({
 		],
 	},
 });
+
+
