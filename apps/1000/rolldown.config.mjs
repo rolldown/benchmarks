@@ -1,5 +1,8 @@
 import { defineConfig } from "rolldown";
 
+const sourceMap = !!process.env.SOURCE_MAP
+const minify = !!process.env.MINIFY
+
 export default defineConfig({
 	input: {
 		main: "./src/index.jsx",
@@ -9,5 +12,7 @@ export default defineConfig({
 	},
 	output: {
 		minify: false,
+    sourcemap: false,
+    dir: "rolldown-dist"
 	},
 });

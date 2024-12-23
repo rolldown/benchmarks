@@ -8,7 +8,9 @@
     "build:farm": "farm build",
     "build:rsbuild": "rsbuild build",
     "build:rolldown": "rolldown build --config rolldown.config.mjs",
-    "build:rollup": "rollup --config rollup.config.mjs"
+    "build:rspack": "rspack build --config rspack.config.mjs",
+    "build:rollup": "rollup --config rollup.config.mjs",
+    "build:esbuild": "node esbuild.mjs"
   },
   "keywords": [],
   "author": "",

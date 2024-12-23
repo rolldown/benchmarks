@@ -10,8 +10,8 @@ export default defineConfig({
 	},
 	jsx: true,
 	output: {
-		dir: "dist",
-		format: "cjs",
+		dir: "rollup-dist",
+		format: "esm",
 	},
 	plugins: [
 		commonjs({}),
