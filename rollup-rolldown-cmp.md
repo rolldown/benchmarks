@@ -1,4 +1,5 @@
-# apps/1000
+# Build without minify & sourcemap
+## apps/1000
 ```bash
 Benchmark 1: node --run build:rolldown
   Time (mean ± σ):     181.5 ms ±  15.4 ms    [User: 433.9 ms, System: 234.5 ms]
@@ -23,7 +24,7 @@ Summary
    20.27 ± 1.77 times faster than 'node --run build:rollup'
 
 ```
-# apps/3000
+## apps/3000
 ```bash
 Benchmark 1: node --run build:rolldown
   Time (mean ± σ):     263.8 ms ±   7.7 ms    [User: 731.7 ms, System: 375.0 ms]
@@ -48,7 +49,7 @@ Summary
    25.89 ± 0.78 times faster than 'node --run build:rollup'
 ```
 
-# apps/5000
+## apps/5000
 
 ```bash
 Benchmark 1: node --run build:rolldown
@@ -78,7 +79,7 @@ Summary
 ```
 
 
-# apps/10000
+## apps/10000
 ```bash
 Benchmark 1: node --run build:rolldown
   Time (mean ± σ):     746.9 ms ±  16.7 ms    [User: 2261.5 ms, System: 1111.9 ms]
@@ -108,24 +109,27 @@ Summary
 
 # apps/three10x
 ```bash
-
 Benchmark 1: node --run build:rolldown
-  Time (mean ± σ):     323.1 ms ±  12.3 ms    [User: 1384.8 ms, System: 470.9 ms]
-  Range (min … max):   308.9 ms … 330.7 ms    3 runs
+  Time (mean ± σ):     320.0 ms ±   9.9 ms    [User: 1350.4 ms, System: 437.0 ms]
+  Range (min … max):   311.0 ms … 330.6 ms    3 runs
  
-  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepar
-e' options.
+Benchmark 2: node --run build:rspack
+  Time (mean ± σ):      1.470 s ±  0.012 s    [User: 3.954 s, System: 0.906 s]
+  Range (min … max):    1.460 s …  1.483 s    3 runs
  
-Benchmark 2: node --run build:rollup
-  Time (mean ± σ):      6.440 s ±  0.144 s    [User: 9.942 s, System: 1.188 s]
-  Range (min … max):    6.350 s …  6.607 s    3 runs
+Benchmark 3: node --run build:esbuild
+  Time (mean ± σ):     276.1 ms ±   9.4 ms    [User: 36.6 ms, System: 13.6 ms]
+  Range (min … max):   266.5 ms … 285.2 ms    3 runs
  
-  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepar
-e' options.
+Benchmark 4: node --run build:rollup
+  Time (mean ± σ):      8.340 s ±  0.179 s    [User: 12.755 s, System: 3.493 s]
+  Range (min … max):    8.139 s …  8.479 s    3 runs
  
 Summary
-  'node --run build:rolldown' ran
-   19.93 ± 0.88 times faster than 'node --run build:rollup'
+  'node --run build:esbuild' ran
+    1.16 ± 0.05 times faster than 'node --run build:rolldown'
+    5.33 ± 0.19 times faster than 'node --run build:rspack'
+   30.21 ± 1.21 times faster than 'node --run build:rollup'
 ```
 
 # apps/html2canvas

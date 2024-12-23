@@ -8,12 +8,16 @@ export default defineConfig({
 	input: {
 		test: path.resolve(import.meta.dirname, "./entry.js"),
 	},
+	jsx: true,
 	output: {
-		dir: "dist",
-		format: "cjs",
+		dir: "rollup-dist",
+		format: "esm",
 	},
 	plugins: [
 		commonjs({}),
+		nodeResolve({
+			extensions: [".js", ".jsx"],
+		}),
 		replace({
 			"process.env.NODE_ENV": JSON.stringify("production"),
 		}),

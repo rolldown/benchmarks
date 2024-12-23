@@ -11,8 +11,8 @@ export default defineConfig({
 		"process.env.NODE_ENV": JSON.stringify("production"),
 	},
 	output: {
-		minify: false,
-    sourcemap: false,
+		minify: minify,
+    sourcemap: sourceMap,
     dir: "rolldown-dist"
 	},
 });
