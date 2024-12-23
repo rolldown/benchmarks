@@ -1,4 +1,10 @@
 # Build without minify & sourcemap
+
+> [!note]
+> command
+>```
+> hyperfine --warmup 1 --runs 3 'node --run build:rolldown' 'node --run build:rspack' 'node --run build:esbuild' 'node --run build:rollup'
+>```
 ## apps/1000
 ```bash
 Benchmark 1: node --run build:rolldown
@@ -121,6 +127,12 @@ Summary
 ```
 
 # Build with minify & sourcemap
+
+> [!note]
+> command
+>```
+> hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack' 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
+> ```
 ## apps/1000
 ```bash
 
