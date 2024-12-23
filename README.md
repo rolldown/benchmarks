@@ -168,3 +168,6 @@ it would be pretty easy to exceeds 1000 modules in real world app.
 2. The test cases cannot reflect the changes in build time of the bundler as the application scale increases.
 3. Using `Regex` to match build time in std out is subjective, different bundler may have different measurement method for build time, 
 so we use process executed time to keep measurement consistent.
+
+
+hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack'
