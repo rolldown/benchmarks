@@ -217,7 +217,7 @@ Summary
    17.93 ± 0.30 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
 ```
 
-# apps/three10x
+## apps/three10x
 ```bash
 Benchmark 1: MINIFY=1 SOURCE_MAP=1 node --run build:rolldown
   Time (mean ± σ):      3.314 s ±  0.002 s    [User: 7.262 s, System: 1.000 s]
@@ -237,3 +237,14 @@ Summary
     3.39 ± 0.05 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
 ```
 
+*output size*
+
+```
+recordMap:  {
+  '1000': { rspack: '756.22', rollup: '832.98', rolldown: '776.86' },
+  '3000': { rspack: '1687.70', rollup: '1849.40', rolldown: '1734.71' },
+  '5000': { rspack: '2528.33', rollup: '2786.24', rolldown: '2611.44' },
+  '10000': { rspack: '5360.06', rollup: '5901.10', rolldown: '5521.27' },
+  three10x: { rspack: '5742.20', rollup: '5862.98', rolldown: '5885.65' }
+}
+```
