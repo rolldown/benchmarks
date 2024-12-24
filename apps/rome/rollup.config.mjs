@@ -10,7 +10,7 @@ const sourceMap = !!process.env.SOURCE_MAP;
 const m = !!process.env.MINIFY;
 export default defineConfig({
 	input: {
-		main: "./src/index.ts"
+		main: "./src/entry.ts"
 	},
 	jsx: false,
 	output: {
@@ -20,11 +20,10 @@ export default defineConfig({
 	},
 	plugins: [
     typescript({
-      include: "src/**/*.ts",
-      outDir: "rollup-dist",
+      // tsconfig: path.resolve(import.meta.dirname, "src/tsconfig.json"),
     }),
 		nodeResolve({
-			extensions: [".ts", ".js", ".d.ts"],
+			extensions: [".ts", ".js"],
 		}),
 		replace({
 			"process.env.NODE_ENV": JSON.stringify("production"),

@@ -11,6 +11,7 @@
   - `apps/10000`: 19014 modules(10000 JSX components + 9014 JS modules in node_modules)
 - The original esbuild `three10x` benchmark
 - `Dexie.js` A mixed typescript and javascript files
+- `rome` based on https://github.com/rome/tools/tree/archived-js, total 1195 typescript file
 
 ### Configurations
 
@@ -287,30 +288,28 @@ Summary
 ```
 
 
-### apps/Dexie.js
+### apps/rome
 
 ```bash
 Benchmark 1: node --run build:rolldown
-  Time (mean ± σ):     102.4 ms ±   1.5 ms    [User: 123.7 ms, System: 72.6 ms]
-  Range (min … max):   101.0 ms … 103.9 ms    3 runs
+  Time (mean ± σ):     181.5 ms ±   1.0 ms    [User: 484.9 ms, System: 284.6 ms]
+  Range (min … max):   180.9 ms … 182.7 ms    3 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prep
+are' options.
  
 Benchmark 2: node --run build:rspack
-  Time (mean ± σ):     234.8 ms ±   1.6 ms    [User: 325.2 ms, System: 112.1 ms]
-  Range (min … max):   233.1 ms … 236.2 ms    3 runs
+  Time (mean ± σ):     818.1 ms ±  28.7 ms    [User: 2717.1 ms, System: 759.6 ms]
+  Range (min … max):   788.7 ms … 846.0 ms    3 runs
  
 Benchmark 3: node --run build:esbuild
-  Time (mean ± σ):      60.9 ms ±   0.9 ms    [User: 34.4 ms, System: 14.7 ms]
-  Range (min … max):    60.0 ms …  61.7 ms    3 runs
- 
-Benchmark 4: node --run build:rollup
-  Time (mean ± σ):      1.891 s ±  0.046 s    [User: 4.122 s, System: 0.289 s]
-  Range (min … max):    1.842 s …  1.932 s    3 runs
+  Time (mean ± σ):     132.1 ms ±   5.6 ms    [User: 38.8 ms, System: 14.6 ms]
+  Range (min … max):   125.8 ms … 136.5 ms    3 runs
  
 Summary
   'node --run build:esbuild' ran
-    1.68 ± 0.03 times faster than 'node --run build:rolldown'
-    3.86 ± 0.06 times faster than 'node --run build:rspack'
-   31.06 ± 0.87 times faster than 'node --run build:rollup'
+    1.37 ± 0.06 times faster than 'node --run build:rolldown'
+    6.19 ± 0.34 times faster than 'node --run build:rspack'
 ```
 
 ## Build with swc minify & sourcemap
@@ -584,31 +583,26 @@ Summary
    27.57 ± 0.77 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
 ```
 
-### apps/Dexie.js
+### apps/rome
 
 ```bash
 
 Benchmark 1: MINIFY=1 SOURCE_MAP=1 node --run build:rolldown
-  Time (mean ± σ):     145.7 ms ±   2.1 ms    [User: 148.0 ms, System: 101.3 ms]
-  Range (min … max):   143.4 ms … 147.5 ms    3 runs
+  Time (mean ± σ):     483.9 ms ±  27.2 ms    [User: 660.1 ms, System: 346.7 ms]
+  Range (min … max):   457.2 ms … 511.6 ms    3 runs
  
 Benchmark 2: MINIFY=1 SOURCE_MAP=1 node --run build:rspack
-  Time (mean ± σ):     426.7 ms ±   7.8 ms    [User: 568.1 ms, System: 163.1 ms]
-  Range (min … max):   420.9 ms … 435.5 ms    3 runs
+  Time (mean ± σ):      1.640 s ±  0.009 s    [User: 3.470 s, System: 0.987 s]
+  Range (min … max):    1.629 s …  1.647 s    3 runs
  
-Benchmark 3: MINIFY=1 SOURCE_MAP=1 node --run build:rollup
-  Time (mean ± σ):      1.941 s ±  0.069 s    [User: 3.953 s, System: 0.294 s]
-  Range (min … max):    1.894 s …  2.021 s    3 runs
- 
-Benchmark 4: MINIFY=1 SOURCE_MAP=1 node --run build:esbuild
-  Time (mean ± σ):      64.7 ms ±   3.0 ms    [User: 37.7 ms, System: 13.2 ms]
-  Range (min … max):    62.8 ms …  68.2 ms    3 runs
+Benchmark 3: MINIFY=1 SOURCE_MAP=1 node --run build:esbuild
+  Time (mean ± σ):     134.9 ms ±   1.5 ms    [User: 35.3 ms, System: 14.5 ms]
+  Range (min … max):   133.4 ms … 136.4 ms    3 runs
  
 Summary
   'MINIFY=1 SOURCE_MAP=1 node --run build:esbuild' ran
-    2.25 ± 0.11 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown'
-    6.59 ± 0.33 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack'
-   29.99 ± 1.77 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
+    3.59 ± 0.21 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown'
+   12.16 ± 0.15 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack'
 ```
 
 _output size(bytes)_
@@ -621,4 +615,5 @@ _output size(bytes)_
 | 10000    | 5491.19 | 5822.29 | 5780.59  | 5993.76 |
 | three10x | 5824.16 | 5916.20 | 5936.23  | 5940.83 |
 | Dexie.js | 117.61| 92.87 | 84.23  | 82.65 |
+| rome | 1740 | x | 1008.06  | 995.20 |
 

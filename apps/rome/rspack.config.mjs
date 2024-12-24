@@ -1,4 +1,5 @@
 import { defineConfig } from "@rspack/cli";
+import * as path from 'path'
 
 import TerserPlugin from "terser-webpack-plugin";
 
@@ -6,16 +7,17 @@ const sourceMap = !!process.env.SOURCE_MAP;
 const minify = !!process.env.MINIFY;
 
 export default defineConfig({
-	entry: "./src/index.ts",
+	entry: "./src/entry.ts",
 	devtool: sourceMap ? "source-map" : false,
-	target: ["web", "es2022"],
+	target: ["node", "es2022"],
 	output: {
 		path: "rspack-dist",
 		filename: "rspack.js",
 		clean: false,
 	},
 	resolve: {
-		extensions: [".ts", ".js", ".d.ts"],
+		extensions: [".ts", ".js"],
+    tsConfig: path.resolve(import.meta.dirname, "src/tsconfig.json"),
 	},
 	optimization: {
 		minimize: minify,

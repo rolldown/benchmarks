@@ -39,6 +39,9 @@ importers:
       '@rollup/plugin-terser':
         specifier: ^0.4.4
         version: 0.4.4(rollup@4.29.1)
+      '@rollup/plugin-typescript':
+        specifier: ^12.1.2
+        version: 12.1.2(rollup@4.29.1)(tslib@2.7.0)(typescript@5.7.2)
       '@rsbuild/core':
         specifier: 1.0.4
         version: 1.0.4

@@ -3,8 +3,7 @@ import { minify } from "rollup-plugin-esbuild";
 const sourceMap = !!process.env.SOURCE_MAP;
 import * as path from 'path'
 const m = !!process.env.MINIFY;
-let tsSet = new Set();
-let jsSet = new Set();
+
 export default defineConfig({
 	input: {
 		main: "./src/entry.ts",
@@ -14,24 +13,12 @@ export default defineConfig({
 		"process.env.NODE_ENV": JSON.stringify("production"),
 	},
   platform: "node",
+  shimMissingExports: true,
   resolve: {
     extensions: [".ts", ".js"],
     tsconfigFilename: path.resolve(import.meta.dirname, "src/tsconfig.json"),
   },
 	plugins: [
-    // {
-    //   transform(code, id) {
-    //     if (id.endsWith(".ts")) {
-    //       tsSet.add(id);
-    //     }
-    //     if (id.endsWith(".js")) {
-    //       jsSet.add(id);
-    //     }
-    //   },
-    //   buildEnd() {
-    //     console.log(`TS: ${tsSet.size}, JS: ${jsSet.size}`);
-    //   }
-    // },
 		m
 			? minify({
 					minify: true,
