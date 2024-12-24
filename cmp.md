@@ -1,3 +1,9 @@
+> [!note]
+> **Environment**  
+> - OS: Linux Ubuntu 22.04 LTS  
+> - CPU: (32) x64 AMD Ryzen 9 5950X 16-Core Processor  
+> - Memory: 64 GB  
+
 # Build without minify & sourcemap
 
 > [!note]
