@@ -1,5 +1,0 @@
-dist/*.js
-dist/*.js.map
-dist/*.mjs
-dist/*.mjs.map
-dist/*.d.ts
