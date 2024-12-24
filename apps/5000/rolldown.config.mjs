@@ -1,5 +1,5 @@
 import { defineConfig } from "rolldown";
-import { minify } from "rollup-plugin-swc3";
+import { minify } from "rollup-plugin-esbuild";
 const sourceMap = !!process.env.SOURCE_MAP;
 const m = !!process.env.MINIFY;
 
@@ -13,12 +13,9 @@ export default defineConfig({
 	plugins: [
 		m
 			? minify({
-					module: true,
-					// swc's minify option here
-					mangle: {
-						toplevel: true,
-					},
-					compress: {},
+					minify: true,
+					legalComments: "none",
+					target: "es2022",
 				})
 			: null,
 	].filter(Boolean),
@@ -29,5 +26,4 @@ export default defineConfig({
 		dir: "rolldown-dist",
 	},
 });
-
 

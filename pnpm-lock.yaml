@@ -47,7 +47,7 @@ importers:
         version: 1.0.2(@rsbuild/core@1.0.4)
       '@rspack/cli':
         specifier: 1.1.8
-        version: 1.1.8(@rspack/core@1.0.5(@swc/helpers@0.5.13))(@types/express@4.17.21)
+        version: 1.1.8(@rspack/core@1.0.5(@swc/helpers@0.5.13))(@types/express@4.17.21)(webpack@4.47.0)
       '@swc/core':
         specifier: ^1.10.1
         version: 1.10.1(@swc/helpers@0.5.13)
@@ -81,6 +81,9 @@ importers:
       rollup-plugin-swc3:
         specifier: ^0.12.1
         version: 0.12.1(@swc/core@1.10.1(@swc/helpers@0.5.13))(rollup@4.28.1)
+      terser-webpack-plugin:
+        specifier: ^5.3.11
+        version: 5.3.11(@swc/core@1.10.1(@swc/helpers@0.5.13))(esbuild@0.24.0)(webpack@4.47.0)
 
   apps/1000: {}
 
@@ -7669,6 +7672,22 @@ packages:
     peerDependencies:
       webpack: ^4.0.0
 
+  terser-webpack-plugin@5.3.11:
+    resolution: {integrity: sha512-RVCsMfuD0+cTt3EwX8hSl2Ks56EbFHWmhluwcqoPKtBnfjiT6olaq7PRIRfhyU8nnC2MrnDrBLfrD/RGE+cVXQ==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      '@swc/core': '*'
+      esbuild: '*'
+      uglify-js: '*'
+      webpack: ^5.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      esbuild:
+        optional: true
+      uglify-js:
+        optional: true
+
   terser@4.8.1:
     resolution: {integrity: sha512-4GnLC0x667eJG0ewJTa6z/yXrbLGv80D9Ru6HIpCQmO+Q4PfEtBFi0ObSckqwL6VyQv/7ENJieXHo2ANmdQwgw==}
     engines: {node: '>=6.0.0'}
@@ -10532,11 +10551,11 @@ snapshots:
       '@rspack/binding-win32-ia32-msvc': 1.0.5
       '@rspack/binding-win32-x64-msvc': 1.0.5
 
-  '@rspack/cli@1.1.8(@rspack/core@1.0.5(@swc/helpers@0.5.13))(@types/express@4.17.21)':
+  '@rspack/cli@1.1.8(@rspack/core@1.0.5(@swc/helpers@0.5.13))(@types/express@4.17.21)(webpack@4.47.0)':
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
       '@rspack/core': 1.0.5(@swc/helpers@0.5.13)
-      '@rspack/dev-server': 1.0.9(@rspack/core@1.0.5(@swc/helpers@0.5.13))(@types/express@4.17.21)
+      '@rspack/dev-server': 1.0.9(@rspack/core@1.0.5(@swc/helpers@0.5.13))(@types/express@4.17.21)(webpack@4.47.0)
       colorette: 2.0.19
       exit-hook: 4.0.0
       interpret: 3.1.1
@@ -10562,7 +10581,7 @@ snapshots:
     optionalDependencies:
       '@swc/helpers': 0.5.13
 
-  '@rspack/dev-server@1.0.9(@rspack/core@1.0.5(@swc/helpers@0.5.13))(@types/express@4.17.21)':
+  '@rspack/dev-server@1.0.9(@rspack/core@1.0.5(@swc/helpers@0.5.13))(@types/express@4.17.21)(webpack@4.47.0)':
     dependencies:
       '@rspack/core': 1.0.5(@swc/helpers@0.5.13)
       chokidar: 3.6.0
@@ -10571,8 +10590,8 @@ snapshots:
       http-proxy-middleware: 2.0.7(@types/express@4.17.21)
       mime-types: 2.1.35
       p-retry: 4.6.2
-      webpack-dev-middleware: 7.4.2
-      webpack-dev-server: 5.0.4
+      webpack-dev-middleware: 7.4.2(webpack@4.47.0)
+      webpack-dev-server: 5.0.4(webpack@4.47.0)
       ws: 8.18.0
     transitivePeerDependencies:
       - '@types/express'
@@ -10815,7 +10834,6 @@ snapshots:
   '@types/node@22.5.5':
     dependencies:
       undici-types: 6.19.8
-    optional: true
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -11182,7 +11200,7 @@ snapshots:
 
   anymatch@2.0.0:
     dependencies:
-      micromatch: 3.1.10(supports-color@6.1.0)
+      micromatch: 3.1.10
       normalize-path: 2.1.1
     transitivePeerDependencies:
       - supports-color
@@ -11595,7 +11613,7 @@ snapshots:
     dependencies:
       bytes: 3.1.2
       content-type: 1.0.5
-      debug: 2.6.9(supports-color@6.1.0)
+      debug: 2.6.9
       depd: 2.0.0
       destroy: 1.2.0
       http-errors: 2.0.0
@@ -11629,6 +11647,21 @@ snapshots:
   brace-expansion@2.0.1:
     dependencies:
       balanced-match: 1.0.2
+
+  braces@2.3.2:
+    dependencies:
+      arr-flatten: 1.1.0
+      array-unique: 0.3.2
+      extend-shallow: 2.0.1
+      fill-range: 4.0.0
+      isobject: 3.0.1
+      repeat-element: 1.1.4
+      snapdragon: 0.8.2
+      snapdragon-node: 2.1.1
+      split-string: 3.1.0
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
 
   braces@2.3.2(supports-color@6.1.0):
     dependencies:
@@ -11906,7 +11939,7 @@ snapshots:
     dependencies:
       anymatch: 2.0.0
       async-each: 1.0.6
-      braces: 2.3.2(supports-color@6.1.0)
+      braces: 2.3.2
       glob-parent: 3.1.0
       inherits: 2.0.4
       is-binary-path: 1.0.1
@@ -12120,7 +12153,7 @@ snapshots:
     dependencies:
       bytes: 3.1.2
       compressible: 2.0.18
-      debug: 2.6.9(supports-color@6.1.0)
+      debug: 2.6.9
       negotiator: 0.6.4
       on-headers: 1.0.2
       safe-buffer: 5.2.1
@@ -12443,6 +12476,10 @@ snapshots:
   date-format@4.0.14: {}
 
   dateformat@3.0.3: {}
+
+  debug@2.6.9:
+    dependencies:
+      ms: 2.0.0
 
   debug@2.6.9(supports-color@6.1.0):
     dependencies:
@@ -13053,6 +13090,18 @@ snapshots:
 
   exit@0.1.2: {}
 
+  expand-brackets@2.1.4:
+    dependencies:
+      debug: 2.6.9
+      define-property: 0.2.5
+      extend-shallow: 2.0.1
+      posix-character-classes: 0.1.1
+      regex-not: 1.0.2
+      snapdragon: 0.8.2
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+
   expand-brackets@2.1.4(supports-color@6.1.0):
     dependencies:
       debug: 2.6.9(supports-color@6.1.0)
@@ -13085,7 +13134,7 @@ snapshots:
       content-type: 1.0.5
       cookie: 0.7.1
       cookie-signature: 1.0.6
-      debug: 2.6.9(supports-color@6.1.0)
+      debug: 2.6.9
       depd: 2.0.0
       encodeurl: 2.0.0
       escape-html: 1.0.3
@@ -13134,6 +13183,19 @@ snapshots:
       chardet: 0.7.0
       iconv-lite: 0.4.24
       tmp: 0.0.33
+
+  extglob@2.0.4:
+    dependencies:
+      array-unique: 0.3.2
+      define-property: 1.0.0
+      expand-brackets: 2.1.4
+      extend-shallow: 2.0.1
+      fragment-cache: 0.2.1
+      regex-not: 1.0.2
+      snapdragon: 0.8.2
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
 
   extglob@2.0.4(supports-color@6.1.0):
     dependencies:
@@ -13308,7 +13370,7 @@ snapshots:
 
   finalhandler@1.3.1:
     dependencies:
-      debug: 2.6.9(supports-color@6.1.0)
+      debug: 2.6.9
       encodeurl: 2.0.0
       escape-html: 1.0.3
       on-finished: 2.4.1
@@ -14685,7 +14747,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 16.18.122
+      '@types/node': 22.5.5
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -15316,6 +15378,24 @@ snapshots:
 
   methods@1.1.2: {}
 
+  micromatch@3.1.10:
+    dependencies:
+      arr-diff: 4.0.0
+      array-unique: 0.3.2
+      braces: 2.3.2
+      define-property: 2.0.2
+      extend-shallow: 3.0.2
+      extglob: 2.0.4
+      fragment-cache: 0.2.1
+      kind-of: 6.0.3
+      nanomatch: 1.2.13
+      object.pick: 1.3.0
+      regex-not: 1.0.2
+      snapdragon: 0.8.2
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+
   micromatch@3.1.10(supports-color@6.1.0):
     dependencies:
       arr-diff: 4.0.0
@@ -15537,6 +15617,22 @@ snapshots:
 
   nanoid@3.3.7: {}
 
+  nanomatch@1.2.13:
+    dependencies:
+      arr-diff: 4.0.0
+      array-unique: 0.3.2
+      define-property: 2.0.2
+      extend-shallow: 3.0.2
+      fragment-cache: 0.2.1
+      is-windows: 1.0.2
+      kind-of: 6.0.3
+      object.pick: 1.3.0
+      regex-not: 1.0.2
+      snapdragon: 0.8.2
+      to-regex: 3.0.2
+    transitivePeerDependencies:
+      - supports-color
+
   nanomatch@1.2.13(supports-color@6.1.0):
     dependencies:
       arr-diff: 4.0.0
@@ -15718,9 +15814,9 @@ snapshots:
 
   object.assign@4.1.5:
     dependencies:
-      call-bind: 1.0.7
+      call-bind: 1.0.8
       define-properties: 1.2.1
-      has-symbols: 1.0.3
+      has-symbols: 1.1.0
       object-keys: 1.1.1
 
   object.pick@1.3.0:
@@ -16259,7 +16355,7 @@ snapshots:
   readdirp@2.2.1:
     dependencies:
       graceful-fs: 4.2.11
-      micromatch: 3.1.10(supports-color@6.1.0)
+      micromatch: 3.1.10
       readable-stream: 2.3.8
     transitivePeerDependencies:
       - supports-color
@@ -16428,7 +16524,7 @@ snapshots:
 
   rimraf@2.7.1:
     dependencies:
-      glob: 7.1.3
+      glob: 7.2.3
 
   rimraf@3.0.2:
     dependencies:
@@ -16658,7 +16754,7 @@ snapshots:
 
   send@0.19.0:
     dependencies:
-      debug: 2.6.9(supports-color@6.1.0)
+      debug: 2.6.9
       depd: 2.0.0
       destroy: 1.2.0
       encodeurl: 1.0.2
@@ -16692,7 +16788,7 @@ snapshots:
     dependencies:
       accepts: 1.3.8
       batch: 0.6.1
-      debug: 2.6.9(supports-color@6.1.0)
+      debug: 2.6.9
       escape-html: 1.0.3
       http-errors: 1.6.3
       mime-types: 2.1.35
@@ -16825,6 +16921,19 @@ snapshots:
   snapdragon-util@3.0.1:
     dependencies:
       kind-of: 3.2.2
+
+  snapdragon@0.8.2:
+    dependencies:
+      base: 0.11.2
+      debug: 2.6.9
+      define-property: 0.2.5
+      extend-shallow: 2.0.1
+      map-cache: 0.2.2
+      source-map: 0.5.7
+      source-map-resolve: 0.5.3
+      use: 3.1.1
+    transitivePeerDependencies:
+      - supports-color
 
   snapdragon@0.8.2(supports-color@6.1.0):
     dependencies:
@@ -17217,9 +17326,21 @@ snapshots:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.1
-      webpack: 4.47.0(webpack-cli@3.3.12)
+      webpack: 4.47.0
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
+
+  terser-webpack-plugin@5.3.11(@swc/core@1.10.1(@swc/helpers@0.5.13))(esbuild@0.24.0)(webpack@4.47.0):
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.25
+      jest-worker: 27.5.1
+      schema-utils: 4.3.0
+      serialize-javascript: 6.0.2
+      terser: 5.37.0
+      webpack: 4.47.0
+    optionalDependencies:
+      '@swc/core': 1.10.1(@swc/helpers@0.5.13)
+      esbuild: 0.24.0
 
   terser@4.8.1:
     dependencies:
@@ -17489,8 +17610,7 @@ snapshots:
 
   unc-path-regex@0.1.2: {}
 
-  undici-types@6.19.8:
-    optional: true
+  undici-types@6.19.8: {}
 
   unicode-canonical-property-names-ecmascript@2.0.1: {}
 
@@ -17722,7 +17842,7 @@ snapshots:
       webpack: 4.47.0(webpack-cli@3.3.12)
       yargs: 13.3.2
 
-  webpack-dev-middleware@7.4.2:
+  webpack-dev-middleware@7.4.2(webpack@4.47.0):
     dependencies:
       colorette: 2.0.20
       memfs: 4.15.1
@@ -17730,8 +17850,10 @@ snapshots:
       on-finished: 2.4.1
       range-parser: 1.2.1
       schema-utils: 4.3.0
+    optionalDependencies:
+      webpack: 4.47.0
 
-  webpack-dev-server@5.0.4:
+  webpack-dev-server@5.0.4(webpack@4.47.0):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -17761,8 +17883,10 @@ snapshots:
       serve-index: 1.9.1
       sockjs: 0.3.24
       spdy: 4.0.2
-      webpack-dev-middleware: 7.4.2
+      webpack-dev-middleware: 7.4.2(webpack@4.47.0)
       ws: 8.18.0
+    optionalDependencies:
+      webpack: 4.47.0
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -17773,6 +17897,34 @@ snapshots:
     dependencies:
       source-list-map: 2.0.1
       source-map: 0.6.1
+
+  webpack@4.47.0:
+    dependencies:
+      '@webassemblyjs/ast': 1.9.0
+      '@webassemblyjs/helper-module-context': 1.9.0
+      '@webassemblyjs/wasm-edit': 1.9.0
+      '@webassemblyjs/wasm-parser': 1.9.0
+      acorn: 6.4.2
+      ajv: 6.12.6
+      ajv-keywords: 3.5.2(ajv@6.12.6)
+      chrome-trace-event: 1.0.4
+      enhanced-resolve: 4.5.0
+      eslint-scope: 4.0.3
+      json-parse-better-errors: 1.0.2
+      loader-runner: 2.4.0
+      loader-utils: 1.4.2
+      memory-fs: 0.4.1
+      micromatch: 3.1.10
+      mkdirp: 0.5.6
+      neo-async: 2.6.2
+      node-libs-browser: 2.2.1
+      schema-utils: 1.0.0
+      tapable: 1.1.3
+      terser-webpack-plugin: 1.4.6(webpack@4.47.0)
+      watchpack: 1.7.5
+      webpack-sources: 1.4.3
+    transitivePeerDependencies:
+      - supports-color
 
   webpack@4.47.0(webpack-cli@3.3.12):
     dependencies:

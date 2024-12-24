@@ -30,7 +30,8 @@
 		"rolldown": "0.15.1",
 		"rolldown-vite": "0.3.2",
 		"rollup-plugin-esbuild": "^6.1.1",
-		"rollup-plugin-swc3": "^0.12.1"
+		"rollup-plugin-swc3": "^0.12.1",
+		"terser-webpack-plugin": "^5.3.11"
 	},
 	"dependencies": {
 		"@rollup/plugin-commonjs": "^28.0.1",

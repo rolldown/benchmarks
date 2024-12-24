@@ -1,5 +1,4 @@
 import { build } from "esbuild";
-import { swcMinify } from "esbuild-plugin-swc-minify";
 
 const sourceMap = !!process.env.SOURCE_MAP;
 const minify = !!process.env.MINIFY;
@@ -14,7 +13,7 @@ build({
 	},
 	legalComments: "none",
 	sourcemap: sourceMap,
-	minify: false,
+	minify: minify,
 	logLevel: "info",
 	plugins: []
 });

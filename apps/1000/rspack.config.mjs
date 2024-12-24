@@ -1,5 +1,7 @@
 import { defineConfig } from "@rspack/cli";
 
+import TerserPlugin from "terser-webpack-plugin";
+
 const sourceMap = !!process.env.SOURCE_MAP;
 const minify = !!process.env.MINIFY;
 
@@ -15,9 +17,20 @@ export default defineConfig({
 	resolve: {
 		extensions: [".js", ".jsx"],
 	},
-  optimization: {
-    minimize: minify
-  },
+	optimization: {
+		minimize: minify,
+		minimizer: [
+			minify &&
+				new TerserPlugin({
+					minify: TerserPlugin.esbuildMinify,
+					terserOptions: {
+						minify: true,
+						legalComments: "none",
+						target: "es2022",
+					},
+				}),
+		].filter(Boolean),
+	},
 	module: {
 		rules: [
 			{
