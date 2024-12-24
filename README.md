@@ -10,7 +10,6 @@
   - `apps/5000`: 9014 modules(5000 JSX components + 4014 JS modules in node_modules)
   - `apps/10000`: 19014 modules(10000 JSX components + 9014 JS modules in node_modules)
 - The original esbuild `three10x` benchmark
-- `Dexie.js` A mixed typescript and javascript files
 - `rome` based on https://github.com/rome/tools/tree/archived-js, total 1195 typescript file
 
 ### Configurations
@@ -614,6 +613,5 @@ _output size(bytes)_
 | 5000     | 2596.04 | 2751.42 | 2734.05  | 2834.99 |
 | 10000    | 5491.19 | 5822.29 | 5780.59  | 5993.76 |
 | three10x | 5824.16 | 5916.20 | 5936.23  | 5940.83 |
-| Dexie.js | 117.61| 92.87 | 84.23  | 82.65 |
 | rome | 1740 | x | 1008.06  | 995.20 |
 
