@@ -274,7 +274,7 @@ Summary
 > [!note]
 > command
 >```
-> hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack' 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup' 'MINIFY=1 SOURCE_MAP=1 node --run build:esbuild'> 
+> hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack' 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup' 'MINIFY=1 SOURCE_MAP=1 node --run build:esbuild' 
 > ```
 
 ## apps/1000
