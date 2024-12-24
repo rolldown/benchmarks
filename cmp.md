@@ -1,5 +1,5 @@
 > [!note]
-> **Environment**  
+> **Environment (unless otherwise noted)**  
 > - OS: Linux Ubuntu 22.04 LTS  
 > - CPU: (32) x64 AMD Ryzen 9 5950X 16-Core Processor  
 > - Memory: 64 GB  
@@ -11,6 +11,7 @@
 >```
 > hyperfine --warmup 1 --runs 3 'node --run build:rolldown' 'node --run build:rspack' 'node --run build:esbuild' 'node --run build:rollup'
 >```
+
 ## apps/1000
 ```bash
 Benchmark 1: node --run build:rolldown
@@ -34,8 +35,60 @@ Summary
     1.51 ± 0.13 times faster than 'node --run build:esbuild'
     3.27 ± 0.28 times faster than 'node --run build:rspack'
    20.27 ± 1.77 times faster than 'node --run build:rollup'
-
 ```
+
+Result on 2024 Mac Mini, M4 / 16GB (4 perf cores)
+
+```bash
+Benchmark 1: node --run build:rolldown
+  Time (mean ± σ):     176.5 ms ±   3.9 ms    [User: 214.2 ms, System: 173.7 ms]
+  Range (min … max):   173.6 ms … 181.0 ms    3 runs
+
+Benchmark 2: node --run build:rspack
+  Time (mean ± σ):     396.7 ms ±   4.1 ms    [User: 676.6 ms, System: 407.1 ms]
+  Range (min … max):   392.1 ms … 399.8 ms    3 runs
+
+Benchmark 3: node --run build:esbuild
+  Time (mean ± σ):     190.2 ms ±   3.0 ms    [User: 53.9 ms, System: 20.0 ms]
+  Range (min … max):   187.2 ms … 193.3 ms    3 runs
+
+Benchmark 4: node --run build:rollup
+  Time (mean ± σ):      2.176 s ±  0.034 s    [User: 3.082 s, System: 1.809 s]
+  Range (min … max):    2.152 s …  2.214 s    3 runs
+
+Summary
+  node --run build:rolldown ran
+    1.08 ± 0.03 times faster than node --run build:esbuild
+    2.25 ± 0.05 times faster than node --run build:rspack
+   12.32 ± 0.33 times faster than node --run build:rollup
+```
+
+Result on 2023 Macbook Pro, M2 Pro / 32GB (8 perf cores)
+
+```bash
+Benchmark 1: node --run build:rolldown
+  Time (mean ± σ):     209.5 ms ±   2.0 ms    [User: 264.9 ms, System: 330.0 ms]
+  Range (min … max):   207.7 ms … 211.6 ms    3 runs
+
+Benchmark 2: node --run build:rspack
+  Time (mean ± σ):     514.4 ms ±  88.6 ms    [User: 818.6 ms, System: 1126.7 ms]
+  Range (min … max):   455.2 ms … 616.3 ms    3 runs
+
+Benchmark 3: node --run build:esbuild
+  Time (mean ± σ):     229.6 ms ±   4.3 ms    [User: 75.2 ms, System: 12.8 ms]
+  Range (min … max):   225.1 ms … 233.7 ms    3 runs
+
+Benchmark 4: node --run build:rollup
+  Time (mean ± σ):      2.749 s ±  0.057 s    [User: 3.787 s, System: 2.384 s]
+  Range (min … max):    2.708 s …  2.814 s    3 runs
+
+Summary
+  node --run build:rolldown ran
+    1.10 ± 0.02 times faster than node --run build:esbuild
+    2.46 ± 0.42 times faster than node --run build:rspack
+   13.12 ± 0.30 times faster than node --run build:rollup
+```
+
 ## apps/3000
 
 ```bash
@@ -143,6 +196,58 @@ Summary
     1.16 ± 0.05 times faster than 'node --run build:rolldown'
     5.33 ± 0.19 times faster than 'node --run build:rspack'
    30.21 ± 1.21 times faster than 'node --run build:rollup'
+```
+
+Result on 2024 Mac Mini, M4 / 16GB (4 perf cores)
+
+```bash
+Benchmark 1: node --run build:rolldown
+  Time (mean ± σ):     261.1 ms ±   1.9 ms    [User: 611.9 ms, System: 217.4 ms]
+  Range (min … max):   259.0 ms … 262.6 ms    3 runs
+
+Benchmark 2: node --run build:rspack
+  Time (mean ± σ):     835.1 ms ±   9.6 ms    [User: 1878.5 ms, System: 383.9 ms]
+  Range (min … max):   827.8 ms … 846.1 ms    3 runs
+
+Benchmark 3: node --run build:esbuild
+  Time (mean ± σ):     268.8 ms ±   4.1 ms    [User: 54.2 ms, System: 16.4 ms]
+  Range (min … max):   264.3 ms … 272.4 ms    3 runs
+
+Benchmark 4: node --run build:rollup
+  Time (mean ± σ):      4.387 s ±  0.015 s    [User: 6.156 s, System: 2.340 s]
+  Range (min … max):    4.374 s …  4.403 s    3 runs
+
+Summary
+  node --run build:rolldown ran
+    1.03 ± 0.02 times faster than node --run build:esbuild
+    3.20 ± 0.04 times faster than node --run build:rspack
+   16.80 ± 0.13 times faster than node --run build:rollup
+```
+
+Result on 2023 Macbook Pro, M2 Pro / 32GB (8 perf cores)
+
+```bash
+Benchmark 1: node --run build:rolldown
+  Time (mean ± σ):     293.6 ms ±   2.2 ms    [User: 679.8 ms, System: 346.3 ms]
+  Range (min … max):   292.2 ms … 296.2 ms    3 runs
+
+Benchmark 2: node --run build:rspack
+  Time (mean ± σ):     984.5 ms ±  18.5 ms    [User: 2157.8 ms, System: 534.0 ms]
+  Range (min … max):   964.8 ms … 1001.5 ms    3 runs
+
+Benchmark 3: node --run build:esbuild
+  Time (mean ± σ):     305.3 ms ±   3.7 ms    [User: 75.4 ms, System: 13.8 ms]
+  Range (min … max):   303.0 ms … 309.6 ms    3 runs
+
+Benchmark 4: node --run build:rollup
+  Time (mean ± σ):      5.460 s ±  0.011 s    [User: 7.594 s, System: 3.111 s]
+  Range (min … max):    5.452 s …  5.472 s    3 runs
+
+Summary
+  node --run build:rolldown ran
+    1.04 ± 0.01 times faster than node --run build:esbuild
+    3.35 ± 0.07 times faster than node --run build:rspack
+   18.59 ± 0.15 times faster than node --run build:rollup
 ```
 
 # Build with swc minify & sourcemap
@@ -409,7 +514,6 @@ Summary
    12.11 ± 0.23 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack'
    27.57 ± 0.77 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
 ```
-
 
 *output size(bytes)*
 
