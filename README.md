@@ -10,6 +10,7 @@
   - `apps/5000`: 9014 modules(5000 JSX components + 4014 JS modules in node_modules)
   - `apps/10000`: 19014 modules(10000 JSX components + 9014 JS modules in node_modules)
 - The original esbuild `three10x` benchmark
+- `Dexie.js` A mixed typescript and javascript files
 
 ### Configurations
 

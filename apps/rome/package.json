@@ -1,0 +1,17 @@
+{
+  "name": "rome-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:rolldown": "rolldown build --config rolldown.config.mjs",
+    "build:rspack": "rspack build --config rspack.config.mjs",
+    "build:rollup": "rollup --config rollup.config.mjs",
+    "build:esbuild": "node esbuild.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}
