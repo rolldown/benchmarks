@@ -3,7 +3,7 @@ import * as path from "path";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
-import { minify } from "rollup-plugin-swc3";
+import { minify } from "rollup-plugin-esbuild";
 
 const sourceMap = !!process.env.SOURCE_MAP;
 const m = !!process.env.MINIFY;
@@ -15,7 +15,7 @@ export default defineConfig({
 	output: {
 		dir: "rollup-dist",
 		format: "esm",
-    sourcemap: sourceMap,
+		sourcemap: sourceMap,
 	},
 	plugins: [
 		commonjs({}),
@@ -27,16 +27,10 @@ export default defineConfig({
 		}),
 		m
 			? minify({
-					module: true,
-					// swc's minify option here
-					mangle: {
-						toplevel: true,
-					},
-					compress: {},
+					minify: true,
+					legalComments: "none",
+					target: "es2022",
 				})
 			: null,
 	].filter(Boolean),
 });
-
-
-

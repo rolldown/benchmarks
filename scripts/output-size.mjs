@@ -6,7 +6,7 @@ import * as path from "path";
 const apps = fs.readdirSync(path.resolve(import.meta.dirname, "../apps"));
 
 let recordMap = {};
-const dists = ["rspack-dist", "rollup-dist", "rolldown-dist"];
+const dists = ["rspack-dist", "rollup-dist", "rolldown-dist", "esbuild-dist"];
 
 for (let i = 0; i < apps.length; i++) {
 	let app = apps[i];

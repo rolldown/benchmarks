@@ -263,7 +263,13 @@ Summary
 | three10x | 5742.20 | 5862.98 | 5885.65  |
 
 
-# ESBUILD MINIFY
+# Build with esbuild minify & sourcemap
+
+> [!note]
+> command
+>```
+> hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack' 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup' 'MINIFY=1 SOURCE_MAP=1 node --run build:esbuild'> 
+> ```
 
 ## apps/1000
 ```bash
@@ -376,19 +382,36 @@ Summary
 ## apps/three10x
 ```bash
 Benchmark 1: MINIFY=1 SOURCE_MAP=1 node --run build:rolldown
-  Time (mean ± σ):      3.314 s ±  0.002 s    [User: 7.262 s, System: 1.000 s]
-  Range (min … max):    3.311 s …  3.315 s    3 runs
+  Time (mean ± σ):      1.622 s ±  0.008 s    [User: 2.097 s, System: 0.949 s]
+  Range (min … max):    1.617 s …  1.632 s    3 runs
  
 Benchmark 2: MINIFY=1 SOURCE_MAP=1 node --run build:rspack
-  Time (mean ± σ):      3.928 s ±  0.033 s    [User: 8.034 s, System: 1.314 s]
-  Range (min … max):    3.894 s …  3.961 s    3 runs
+  Time (mean ± σ):      4.433 s ±  0.066 s    [User: 6.099 s, System: 1.885 s]
+  Range (min … max):    4.364 s …  4.496 s    3 runs
  
 Benchmark 3: MINIFY=1 SOURCE_MAP=1 node --run build:rollup
-  Time (mean ± σ):     11.238 s ±  0.172 s    [User: 17.966 s, System: 3.811 s]
-  Range (min … max):   11.042 s … 11.362 s    3 runs
+  Time (mean ± σ):     10.093 s ±  0.256 s    [User: 13.889 s, System: 3.848 s]
+  Range (min … max):    9.841 s … 10.352 s    3 runs
+ 
+Benchmark 4: MINIFY=1 SOURCE_MAP=1 node --run build:esbuild
+  Time (mean ± σ):     366.0 ms ±   4.3 ms    [User: 36.8 ms, System: 12.3 ms]
+  Range (min … max):   362.5 ms … 370.9 ms    3 runs
  
 Summary
-  'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' ran
-    1.19 ± 0.01 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack'
-    3.39 ± 0.05 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
+  'MINIFY=1 SOURCE_MAP=1 node --run build:esbuild' ran
+    4.43 ± 0.06 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown'
+   12.11 ± 0.23 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack'
+   27.57 ± 0.77 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
 ```
+
+
+*output size(bytes)*
+
+| CaseName     | RSPack  | Rollup  | Rolldown | Esbuild  |
+|----------|---------|---------|----------|----------|
+| 1000     | 777.36  | 822.89  | 811.59   | 844.72   |
+| 3000     | 1729.98 | 1828.02 | 1814.24  | 1877.85  |
+| 5000     | 2596.04 | 2751.42 | 2734.05  | 2834.99  |
+| 10000    | 5491.19 | 5822.29 | 5780.59  | 5993.76  |
+| three10x | 5824.16 | 5916.20 | 5936.23  | 5940.83  |
+
