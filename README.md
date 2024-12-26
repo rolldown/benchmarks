@@ -10,6 +10,7 @@
   - `apps/5000`: 9014 modules(5000 JSX components + 4014 JS modules in node_modules)
   - `apps/10000`: 19014 modules(10000 JSX components + 9014 JS modules in node_modules)
 - The original esbuild `three10x` benchmark
+- `rome` based on https://github.com/rome/tools/tree/archived-js, total 1195 typescript file
 
 ### Configurations
 
@@ -232,6 +233,7 @@ Summary
    30.21 ± 1.21 times faster than 'node --run build:rollup'
 ```
 
+
 Result on 2024 Mac Mini, M4 / 16GB (4 perf cores)
 
 ```bash
@@ -282,6 +284,31 @@ Summary
     1.04 ± 0.01 times faster than node --run build:esbuild
     3.35 ± 0.07 times faster than node --run build:rspack
    18.59 ± 0.15 times faster than node --run build:rollup
+```
+
+
+### apps/rome
+
+```bash
+Benchmark 1: node --run build:rolldown
+  Time (mean ± σ):     181.5 ms ±   1.0 ms    [User: 484.9 ms, System: 284.6 ms]
+  Range (min … max):   180.9 ms … 182.7 ms    3 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prep
+are' options.
+ 
+Benchmark 2: node --run build:rspack
+  Time (mean ± σ):     818.1 ms ±  28.7 ms    [User: 2717.1 ms, System: 759.6 ms]
+  Range (min … max):   788.7 ms … 846.0 ms    3 runs
+ 
+Benchmark 3: node --run build:esbuild
+  Time (mean ± σ):     132.1 ms ±   5.6 ms    [User: 38.8 ms, System: 14.6 ms]
+  Range (min … max):   125.8 ms … 136.5 ms    3 runs
+ 
+Summary
+  'node --run build:esbuild' ran
+    1.37 ± 0.06 times faster than 'node --run build:rolldown'
+    6.19 ± 0.34 times faster than 'node --run build:rspack'
 ```
 
 ## Build with swc minify & sourcemap
@@ -555,6 +582,28 @@ Summary
    27.57 ± 0.77 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup'
 ```
 
+### apps/rome
+
+```bash
+
+Benchmark 1: MINIFY=1 SOURCE_MAP=1 node --run build:rolldown
+  Time (mean ± σ):     483.9 ms ±  27.2 ms    [User: 660.1 ms, System: 346.7 ms]
+  Range (min … max):   457.2 ms … 511.6 ms    3 runs
+ 
+Benchmark 2: MINIFY=1 SOURCE_MAP=1 node --run build:rspack
+  Time (mean ± σ):      1.640 s ±  0.009 s    [User: 3.470 s, System: 0.987 s]
+  Range (min … max):    1.629 s …  1.647 s    3 runs
+ 
+Benchmark 3: MINIFY=1 SOURCE_MAP=1 node --run build:esbuild
+  Time (mean ± σ):     134.9 ms ±   1.5 ms    [User: 35.3 ms, System: 14.5 ms]
+  Range (min … max):   133.4 ms … 136.4 ms    3 runs
+ 
+Summary
+  'MINIFY=1 SOURCE_MAP=1 node --run build:esbuild' ran
+    3.59 ± 0.21 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown'
+   12.16 ± 0.15 times faster than 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack'
+```
+
 _output size(bytes)_
 
 | CaseName | RSPack  | Rollup  | Rolldown | Esbuild |
@@ -564,3 +613,5 @@ _output size(bytes)_
 | 5000     | 2596.04 | 2751.42 | 2734.05  | 2834.99 |
 | 10000    | 5491.19 | 5822.29 | 5780.59  | 5993.76 |
 | three10x | 5824.16 | 5916.20 | 5936.23  | 5940.83 |
+| rome | 1740 | x | 1008.06  | 995.20 |
+

@@ -1,0 +1,16 @@
+{
+  "name": "rome",
+  "type": "module",
+  "main": "index.ts",
+  "version": "0.0.0",
+  "license": "MIT",
+  "files": [
+    "LICENSE"
+  ],
+  "bin": {
+    "rome": "bin/rome.ts"
+  },
+  "scripts": {
+    "postinstall": "echo \"Thanks for using Rome! This space reserved for future sustainability announcements. See https://github.com/facebookexperimental/rome/pull/198 for context.\""
+  }
+}
