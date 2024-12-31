@@ -212,9 +212,9 @@ Here’s a simple example to illustrate the entire build process:
 ![IMAGE (4)](https://github.com/user-attachments/assets/7e95fb60-d345-4d23-a35e-c7d062fa2b70)
 
 
-Although parts of Rolldown core can handle multiple tasks in parallel, JavaScript plugins execute in a single thread; thus, each task's hook call phase is almost executed serially as the number of JavaScript plugins increases, leading to increased execution time in that diamond-shaped section and significantly reduced overall CPU utilization.
+Although parts of Rolldown core can handle multiple tasks in parallel, JavaScript plugins execute in a single thread. Thus, each task's hook call phase is almost executed serially. As the number of JavaScript plugins increases, leading to increased execution time in that diamond-shaped section and significantly reduced overall CPU utilization.
 
-After using `filter`, Rolldown core can determine whether a plugin matches module metadata before calling ffi calls; if it does not match, it skips it altogether, greatly reducing execution time in that diamond-shaped section.
+After using `filter`, Rolldown core can determine whether a plugin matches module metadata before invoking `FFI` calls. If it does not match, it skips it altogether, greatly reducing execution time in that diamond-shaped section and improving the CPU utilization.
 
 
 
