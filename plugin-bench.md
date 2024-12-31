@@ -197,11 +197,12 @@ It can be seen that after adding `filter`, when there are fewer matching files f
 Native language-based bundlers typically use algorithms similar to solving the [producer-consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem) to generate ModuleGraph and metadata for each module in parallel.
 Here’s a simple example to illustrate the entire build process:
 **Dependency Graph**
-![[IMAGE (3).png]]
+![IMAGE (3)](https://github.com/user-attachments/assets/e49c29f1-1d2f-4d21-a277-311bcc33eda7)
+
 
 ### Rolldown without JavaScript Plugin
+![IMAGE (2) 1](https://github.com/user-attachments/assets/ad071cf9-6a34-4a7d-a669-02efec342d45)
 
-![[IMAGE (2) .png]]
 
 > [!note]
 >
@@ -209,8 +210,9 @@ Here’s a simple example to illustrate the entire build process:
 > For better visualization, some time slices in the illustrations can be enlarged; for instance, in actual programs, `fetch_module` time is at the nanosecond level.
 
 ### Rolldown with JavaScript Plugin
+![IMAGE (4)](https://github.com/user-attachments/assets/7e95fb60-d345-4d23-a35e-c7d062fa2b70)
 
-![[IMAGE (4).png]]
+
 Although parts of Rolldown core can handle multiple tasks in parallel, JavaScript plugins execute in a single thread; thus, each task's hook call phase is almost executed serially as the number of JavaScript plugins increases, leading to increased execution time in that diamond-shaped section and significantly reduced overall CPU utilization.
 
 After using `filter`, Rolldown core can determine whether a plugin matches module metadata before calling ffi calls; if it does not match, it skips it altogether, greatly reducing execution time in that diamond-shaped section.
