@@ -1,6 +1,6 @@
 Although the Rolldown core is written in Rust and utilizes modern CPU parallel computing capabilities to improve build speed, it still relies on the JavaScript runtime to provide the execution environment and (by the JavaScript engine) execute user-side JavaScript plugin code in order to maintain compatibility with JavaScript plugins as much as possible. Therefore, one of the common issues users may encounter is that as the number of JavaScript plugins increases, the build performance gradually deteriorates.
 
-# Example
+# What?
 
 Here, we use a specific example, taking `apps/10000` as an example.
 
@@ -119,7 +119,7 @@ Summary
 
 It can be seen that when the number of JavaScript plugins is ten, the build time is almost four times that of having no plugins at all. Before understanding the reasons, let's look at how to optimize this.
 
-# Optimization
+# How? (the optimization)
 
 To address this issue, Rolldown supports passing additional fields `filter` when JavaScript plugin are passed as object. Below are the changes made to the plugin:
 
@@ -158,7 +158,6 @@ index 822af995..dee07e68 100644
    }
 
 ```
-
 ## New Benchmark Result
 
 ```bash
@@ -192,15 +191,15 @@ Summary
 
 It can be seen that after adding `filter`, when there are fewer matching files for the JavaScript plugin itself, the number of JavaScript plugins has little observable impact on build performance.
 
-## Reason
+# Why?
 
 Native language-based bundlers typically use algorithms similar to solving the [producer-consumer problem](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem) to generate ModuleGraph and metadata for each module in parallel.
 Here’s a simple example to illustrate the entire build process:
+
 **Dependency Graph**
 ![IMAGE (3)](https://github.com/user-attachments/assets/e49c29f1-1d2f-4d21-a277-311bcc33eda7)
 
-
-### Rolldown without JavaScript Plugin
+## Rolldown without JavaScript Plugin
 ![IMAGE (2) 1](https://github.com/user-attachments/assets/ad071cf9-6a34-4a7d-a669-02efec342d45)
 
 
@@ -209,7 +208,7 @@ Here’s a simple example to illustrate the entire build process:
 > The illustrations only represent an approximate algorithm of Rolldown and do not depict specific implementations.
 > For better visualization, some time slices in the illustrations can be enlarged; for instance, in actual programs, `fetch_module` time is at the nanosecond level.
 
-### Rolldown with JavaScript Plugin
+## Rolldown with JavaScript Plugin
 ![IMAGE (4)](https://github.com/user-attachments/assets/7e95fb60-d345-4d23-a35e-c7d062fa2b70)
 
 
