@@ -10,18 +10,17 @@ export default defineConfig({
 	define: {
 		"process.env.NODE_ENV": JSON.stringify("production"),
 	},
-	plugins: [
-		m
-			? minify({
-					minify: true,
-					legalComments: "none",
-					target: "es2022",
-				})
-			: null,
-	].filter(Boolean),
-	profilerNames: !m,
+	// plugins: [
+	// 	m
+	// 		? minify({
+	// 				minify: true,
+	// 				legalComments: "none",
+	// 				target: "es2022",
+	// 			})
+	// 		: null,
+	// ].filter(Boolean),
+	profilerNames: false,
 	output: {
-		minify: false,
 		sourcemap: sourceMap,
 		dir: "rolldown-dist",
 	},

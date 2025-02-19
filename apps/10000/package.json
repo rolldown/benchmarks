@@ -16,6 +16,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "oxc-minify": "^0.51.0"
+  }
 }
