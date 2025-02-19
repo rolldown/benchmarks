@@ -11,7 +11,7 @@ export default defineConfig({
 	input: {
 		test: path.resolve(import.meta.dirname, "src/index.jsx"),
 	},
-	jsx: true,
+	jsx: 'react-jsx',
 	output: {
 		dir: "rollup-dist",
 		format: "esm",
