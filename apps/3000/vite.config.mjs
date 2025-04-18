@@ -1,4 +1,4 @@
-import { defineConfig } from "rolldown-vite";
+import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,5 +8,5 @@ export default defineConfig({
   experimental: {
     enableNativePlugin: true,
   },
-  esbuild: false
+  esbuild: false,
 });
