@@ -19,17 +19,6 @@ export default defineConfig({
 	},
 	optimization: {
 		minimize: minify,
-		minimizer: [
-			minify &&
-				new TerserPlugin({
-					minify: TerserPlugin.esbuildMinify,
-					terserOptions: {
-						minify: true,
-						legalComments: "none",
-						target: "es2022",
-					},
-				}),
-		].filter(Boolean),
 	},
 	module: {
 		rules: [
