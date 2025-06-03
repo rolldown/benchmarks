@@ -315,7 +315,7 @@ Summary
 > command
 >
 > ```
-> hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack' 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup' 'MINIFY=1 SOURCE_;AP=1 bun run build:bun'
+> hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack' 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup' 'MINIFY=1 SOURCE_MAP=1 bun run build:bun'
 > ```
 
 ### apps/1000
@@ -442,7 +442,7 @@ _output size(bytes)_
 > command
 >
 > ```
-> hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack' 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup' 'MINIFY=1 SOURCE_MAP=1 node --run build:esbuild' 'MINIFY=1 SOURCE_;AP=1 bun run build:bun'
+> hyperfine --warmup 1 --runs 3 'MINIFY=1 SOURCE_MAP=1 node --run build:rolldown' 'MINIFY=1 SOURCE_MAP=1 node --run build:rspack' 'MINIFY=1 SOURCE_MAP=1 node --run build:rollup' 'MINIFY=1 SOURCE_MAP=1 node --run build:esbuild' 'MINIFY=1 SOURCE_MAP=1 bun run build:bun'
 > ```
 
 ### apps/1000
