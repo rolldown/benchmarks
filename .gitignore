@@ -4,3 +4,4 @@ rolldown-dist
 rspack-dist
 rollup-dist
 esbuild-dist
+bun-dist
