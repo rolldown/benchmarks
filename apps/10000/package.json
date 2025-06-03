@@ -11,7 +11,7 @@
     "build:rspack": "rspack build --config rspack.config.mjs",
     "build:rollup": "rollup --config rollup.config.mjs",
     "build:esbuild": "esbuild --bundle --outdir=esbuild-dist --platform=node --target=es2015 ./src/index.jsx --minify",
-    "build:bun": "bun build --outdir=dist ./src/index.jsx"
+    "build:bun": "bun run bun.ts"
   },
   "keywords": [],
   "author": "",

@@ -7,7 +7,8 @@
     "build:rolldown": "rolldown build --config rolldown.config.mjs",
     "build:rspack": "rspack build --config rspack.config.mjs",
     "build:rollup": "rollup --config rollup.config.mjs",
-    "build:esbuild": "node esbuild.mjs"
+    "build:esbuild": "node esbuild.mjs",
+    "build:bun": "bun run bun.ts"
   },
   "keywords": [],
   "author": "",
