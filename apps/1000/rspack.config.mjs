@@ -1,7 +1,5 @@
 import { defineConfig } from "@rspack/cli";
 
-import TerserPlugin from "terser-webpack-plugin";
-
 const sourceMap = !!process.env.SOURCE_MAP;
 const minify = !!process.env.MINIFY;
 
@@ -28,17 +26,15 @@ export default defineConfig({
 					loader: "builtin:swc-loader",
 					options: {
 						jsc: {
+							target: "es2022",
 							parser: {
 								syntax: "ecmascript",
 								jsx: true,
 							},
 							transform: {
 								react: {
-									pragma: "React.createElement",
-									pragmaFrag: "React.Fragment",
-									throwIfNamespace: true,
+									runtime: "automatic",
 									development: false,
-									useBuiltins: false,
 								},
 							},
 						},
