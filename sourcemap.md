@@ -118,7 +118,7 @@ Summary
 | apps/5000 | 1.747 s | 894.5 ms | 852.5 ms | 1.95x |
 | apps/10000 | 2.992 s | 1.368 s | 1.624 s | 2.19x |
 
-## Plugin transform time (build time - noop transform build time)
+## Plugin transform time (build time - noop plugin build time)
 
 | Runs | Transform Time (babel + js magicString) | Transform Time (oxc raw trasfer + native magicString) | Time Saved | Speedup |
 |------|---------------------------|---------------------------|------------|---------|
