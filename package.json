@@ -9,8 +9,12 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"packageManager": "pnpm@9.15.1",
+	"packageManager": "pnpm@10.18.0",
 	"devDependencies": {
+		"@babel/core": "^7.28.4",
+		"@babel/parser": "^7.28.4",
+		"@babel/traverse": "^7.28.4",
+		"@babel/types": "^7.28.4",
 		"@farmfe/cli": "^1.0.0",
 		"@farmfe/core": "^1.0.3",
 		"@farmfe/plugin-react": "^1.0.0",
@@ -20,25 +24,31 @@
 		"@rollup/plugin-typescript": "^12.1.2",
 		"@rsbuild/core": "1.3.7",
 		"@rsbuild/plugin-react": "1.2.0",
-		"@rspack/core": "1.3.5",
 		"@rspack/cli": "1.3.5",
+		"@rspack/core": "1.3.5",
 		"@swc/core": "^1.10.1",
 		"@types/glob": "^7.1.1",
 		"esbuild": "^0.24.0",
 		"glob": "11.0.0",
 		"lint-staged": "^15.2.10",
+		"magic-string": "^0.30.19",
+		"oxc-parser": "^0.93.0",
+		"oxc-walker": "^0.5.2",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
-		"rolldown": "nightly",
-		"vite": "npm:rolldown-vite@latest",
+		"rolldown": "latest",
 		"rollup-plugin-esbuild": "^6.1.1",
 		"rollup-plugin-swc3": "^0.12.1",
-		"terser-webpack-plugin": "^5.3.11"
+		"terser-webpack-plugin": "^5.3.11",
+		"vite": "npm:rolldown-vite@latest"
 	},
 	"dependencies": {
 		"@rollup/plugin-commonjs": "^28.0.1",
 		"@rollup/plugin-node-resolve": "^15.3.0",
 		"@rollup/plugin-replace": "^6.0.1",
 		"rollup": "^4.28.1"
+	},
+	"resolutions": {
+		"rolldown": "https://pkg.pr.new/rolldown@6293"
 	}
 }
