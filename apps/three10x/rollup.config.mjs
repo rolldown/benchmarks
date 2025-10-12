@@ -5,32 +5,28 @@ import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
 import { minify } from "rollup-plugin-esbuild";
 
-const sourceMap = !!process.env.SOURCE_MAP;
-const m = !!process.env.MINIFY;
 export default defineConfig({
-	input: {
-		test: path.resolve(import.meta.dirname, "./entry.js"),
-	},
-	jsx: true,
-	output: {
-		dir: "rollup-dist",
-		format: "esm",
-		sourcemap: sourceMap,
-	},
-	plugins: [
-		commonjs({}),
-		nodeResolve({
-			extensions: [".js", ".jsx"],
-		}),
-		replace({
-			"process.env.NODE_ENV": JSON.stringify("production"),
-		}),
-		m
-			? minify({
-					minify: true,
-					legalComments: "none",
-					target: "es2022",
-				})
-			: null,
-	].filter(Boolean),
+  input: {
+    test: path.resolve(import.meta.dirname, "./entry.js"),
+  },
+  jsx: true,
+  output: {
+    dir: "rollup-dist",
+    format: "esm",
+    sourcemap: true,
+  },
+  plugins: [
+    commonjs({}),
+    nodeResolve({
+      extensions: [".js", ".jsx"],
+    }),
+    replace({
+      "process.env.NODE_ENV": JSON.stringify("production"),
+    }),
+    minify({
+      minify: true,
+      legalComments: "none",
+      target: "es2022",
+    }),
+  ].filter(Boolean),
 });

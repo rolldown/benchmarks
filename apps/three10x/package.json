@@ -1,13 +1,13 @@
 {
-  "name": "three10x",
+  "name": "rome-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build:rolldown": "rolldown build --config rolldown.config.mjs",
     "build:rspack": "rspack build --config rspack.config.mjs",
     "build:rollup": "rollup --config rollup.config.mjs",
-    "build:esbuild": "node esbuild.mjs"
+    "build:esbuild": "esbuild ./entry.js --bundle --outdir=dist-esbuild --minify --sourcemap",
+    "build:bun": "bun build ./entry.js --outdir=dist-bun --production --sourcemap"
   },
   "keywords": [],
   "author": "",
