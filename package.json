@@ -9,7 +9,7 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"packageManager": "pnpm@9.15.1",
+	"packageManager": "pnpm@10.18.2",
 	"devDependencies": {
 		"@farmfe/cli": "^1.0.5",
 		"@farmfe/core": "^1.7.11",
