@@ -10,6 +10,7 @@ export default defineConfig({
     progressBar: false
   },
   output: {
+    distPath: 'dist-rsbuild',
     minify,
     sourceMap
   }

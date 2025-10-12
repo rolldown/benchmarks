@@ -1,6 +1,2 @@
 node_modules
-dist
-rolldown-dist
-rspack-dist
-rollup-dist
-esbuild-dist
+dist-*

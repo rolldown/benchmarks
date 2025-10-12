@@ -4,7 +4,7 @@ const sourceMap = !!process.env.SOURCE_MAP;
 const minify = !!process.env.MINIFY;
 build({
 	entryPoints: ["src/index.jsx"],
-	outfile: "esbuild-dist/esbuild.js",
+	outfile: "dist-esbuild/esbuild.js",
 	format: "esm",
 	target: "es2022",
 	bundle: true,
@@ -17,3 +17,4 @@ build({
 	logLevel: "info",
 	plugins: []
 });
+

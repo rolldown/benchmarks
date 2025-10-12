@@ -9,7 +9,9 @@ export default defineConfig({
       main: "./index.html",
     },
     progress: false,
-    output: {},
+    output: {
+      path: 'dist-farm'
+    },
     sourcemap: false
   },
 });

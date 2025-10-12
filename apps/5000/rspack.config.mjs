@@ -8,7 +8,7 @@ export default defineConfig({
 	devtool: sourceMap ? "source-map" : false,
 	target: ["web", "es2022"],
 	output: {
-		path: "rspack-dist",
+		path: "dist-rspack",
 		filename: "rspack.js",
 		clean: false,
 	},

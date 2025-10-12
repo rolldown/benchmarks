@@ -13,7 +13,7 @@ export default defineConfig({
 	},
 	jsx: true,
 	output: {
-		dir: "rollup-dist",
+		dir: "dist-rollup",
 		format: "esm",
 		sourcemap: sourceMap,
 	},

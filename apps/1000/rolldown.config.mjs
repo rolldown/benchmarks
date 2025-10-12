@@ -13,6 +13,6 @@ export default defineConfig({
   output: {
     minify: m,
     sourcemap: sourceMap,
-    dir: "rolldown-dist",
+    dir: "dist-rolldown",
   },
 });
