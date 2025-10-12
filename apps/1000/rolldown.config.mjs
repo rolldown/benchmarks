@@ -1,6 +1,4 @@
 import { defineConfig } from "rolldown";
-const sourceMap = !!process.env.SOURCE_MAP;
-const m = !!process.env.MINIFY;
 
 export default defineConfig({
   input: {
@@ -9,10 +7,10 @@ export default defineConfig({
   define: {
     "process.env.NODE_ENV": JSON.stringify("production"),
   },
-  profilerNames: !m,
+  profilerNames: false,
   output: {
-    minify: m,
-    sourcemap: sourceMap,
+    minify: true,
+    sourcemap: true,
     dir: "dist-rolldown",
   },
 });

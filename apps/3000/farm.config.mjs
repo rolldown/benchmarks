@@ -3,7 +3,7 @@ import { defineConfig } from "@farmfe/core";
 export default defineConfig({
   plugins: ["@farmfe/plugin-react"],
   compilation: {
-    minify: false,
+    minify: true,
     persistentCache: false,
     input: {
       main: "./index.html",
@@ -12,6 +12,6 @@ export default defineConfig({
     output: {
       path: 'dist-farm'
     },
-    sourcemap: false
+    sourcemap: true
   },
 });

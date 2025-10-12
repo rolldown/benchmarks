@@ -1,11 +1,8 @@
 import { defineConfig } from "@rspack/cli";
 
-const sourceMap = !!process.env.SOURCE_MAP;
-const minify = !!process.env.MINIFY;
-
 export default defineConfig({
 	entry: "./src/index.jsx",
-	devtool: sourceMap ? "source-map" : false,
+	devtool: "source-map",
 	target: ["web", "es2022"],
 	output: {
 		path: "dist-rspack",
@@ -16,7 +13,7 @@ export default defineConfig({
 		extensions: [".js", ".jsx"],
 	},
 	optimization: {
-		minimize: minify,
+		minimize: true,
 	},
 	module: {
 		rules: [
