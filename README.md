@@ -40,7 +40,7 @@ Due to different native languages and architectural differences, the results may
 
 - Included tools are publishing new versions with improvements constantly. While we try our best to update them periodically, numbers published here are not guaranteed to be always up-to-date.
 
-- Results are automatically updated weekly via GitHub Actions CI running on Ubuntu, macOS, and Windows runners.
+- Results are automatically updated via GitHub Actions CI running on Ubuntu, macOS, and Windows runners whenever a tool is updated.
 
 ### Benchmark Results for `apps/10000`
 

@@ -41,14 +41,18 @@ Example:
 const app = values.app;
 const jsonOutput = values.json;
 
+// Determine hyperfine binary name based on platform
+const hyperfineBin = process.platform === 'win32' ? 'hyperfine.exe' : 'hyperfine';
+
 // Check if hyperfine is installed
 try {
-  execSync('hyperfine --version', { stdio: 'ignore' });
+  execSync(`${hyperfineBin} --version`, { stdio: 'ignore' });
 } catch (error) {
   console.error('Error: hyperfine is not installed.');
   console.error('Please install it from: https://github.com/sharkdp/hyperfine');
   console.error('  macOS: brew install hyperfine');
   console.error('  Linux: apt install hyperfine / pacman -S hyperfine');
+  console.error('  Windows: choco install hyperfine');
   process.exit(1);
 }
 
@@ -61,7 +65,7 @@ if (!existsSync(app)) {
 // Run benchmark for all tools
 const tools = ['vite', 'rsbuild', 'rspack', 'rolldown', 'esbuild', 'bun'];
 const tempJsonFile = '.bench-temp.json';
-let cmd = `hyperfine --warmup 1 --runs 3 --export-json '${tempJsonFile}'`;
+let cmd = `${hyperfineBin} --export-json '${tempJsonFile}'`;
 
 // Add tool commands
 for (const tool of tools) {
