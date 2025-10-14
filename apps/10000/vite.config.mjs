@@ -5,5 +5,6 @@ export default defineConfig({
   build: {
     outDir: 'dist-vite',
     enableBuildReport: false,
+    sourcemap: true
   }
 })
