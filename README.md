@@ -40,28 +40,12 @@ Due to different native languages and architectural differences, the results may
 
 - Included tools are publishing new versions with improvements constantly. While we try our best to update them periodically, numbers published here are not guaranteed to be always up-to-date.
 
-### Results for `apps/10000` on 2025 13-inch MacBook Air M4, Node.js v24.4
+- Results are automatically updated weekly via GitHub Actions CI running on Ubuntu, macOS, and Windows runners.
 
-```
-$ hyperfine --warmup 1 --runs 3 \
-    'node --run build:rolldown' \
-    'node --run build:esbuild' \
-    'node --run build:rspack'
+### Benchmark Results for `apps/10000`
 
-Benchmark 1: node --run build:rolldown
-  Time (mean ± σ):     527.9 ms ±   3.0 ms    [User: 1236.1 ms, System: 782.1 ms]
-  Range (min … max):   525.2 ms … 531.2 ms    3 runs
+<!-- BENCHMARK_START -->
 
-Benchmark 2: node --run build:esbuild
-  Time (mean ± σ):     603.7 ms ±   8.5 ms    [User: 1565.9 ms, System: 891.5 ms]
-  Range (min … max):   595.9 ms … 612.8 ms    3 runs
+Results will be automatically updated by CI.
 
-Benchmark 3: node --run build:rspack
-  Time (mean ± σ):      1.648 s ±  0.029 s    [User: 4.274 s, System: 1.332 s]
-  Range (min … max):    1.619 s …  1.676 s    3 runs
-
-Summary
-  node --run build:rolldown ran
-    1.14 ± 0.02 times faster than node --run build:esbuild
-    3.12 ± 0.06 times faster than node --run build:rspack
-```
+<!-- BENCHMARK_END -->
