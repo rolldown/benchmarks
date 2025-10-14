@@ -68,11 +68,11 @@ if (jsonOutput) {
 
 // Add tool commands
 for (const tool of tools) {
-  cmd += ` 'cd ${app} && node --run build:${tool}'`;
+  cmd += ` -n '${tool}' 'node --run build:${tool}'`;
 }
 
 console.log(`Running benchmarks for: ${tools.join(', ')}`);
 console.log(`App: ${app}`);
 console.log('');
 
-execSync(cmd, { stdio: 'inherit', shell: true });
+execSync(cmd, { stdio: 'inherit', shell: true, cwd: app });
