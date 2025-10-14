@@ -104,13 +104,37 @@ const benchmarkJson = JSON.parse(readFileSync(join(app, tempJsonFile), 'utf-8'))
 // Get file sizes
 const fileSizes = getFileSizes(app, tools);
 
+// Get tool versions from package.json
+const toolVersions = getToolVersions();
+
+// Create reverse mapping from display names to internal tool names
+const displayNameToTool = Object.entries(toolDisplayNames).reduce((acc, [tool, displayName]) => {
+  acc[displayName] = tool;
+  return acc;
+}, {});
+
 // Combine results
 const results = benchmarkJson.results.map((result) => {
-  const toolName = result.command.match(/'node --run build:(\w+)'/)?.[1] || result.command;
+  // Extract tool name from the command or use the command itself (which might be the display name)
+  let toolName = result.command.match(/node --run build:(\w+)/)?.[1];
+
+  // If we couldn't extract from command, result.command might be the display name
+  // Try to map it back to the internal tool name
+  if (!toolName) {
+    toolName = displayNameToTool[result.command] || result.command;
+  }
+
   const sizeData = fileSizes.find(s => s.tool === toolName);
 
+  // Get version using the internal tool name (before display name mapping)
+  const version = toolVersions[toolName] || 'unknown';
+
+  // Get display name for the tool
+  const displayName = toolDisplayNames[toolName] || toolName;
+
   return {
-    tool: toolName,
+    tool: displayName,
+    version: version,
     mean: result.mean,
     stddev: result.stddev,
     jsSize: sizeData?.jsSize || 0,
@@ -136,6 +160,7 @@ if (jsonOutput) {
   const output = {
     results: results.map(r => ({
       tool: r.tool,
+      version: r.version,
       time_ms: (r.mean * 1000).toFixed(2),
       stddev_ms: (r.stddev * 1000).toFixed(2),
       js_size: formatSize(r.jsSize),
@@ -144,6 +169,38 @@ if (jsonOutput) {
     })),
   };
   writeFileSync(jsonOutput, JSON.stringify(output, null, 2));
+}
+
+function getToolVersions() {
+  const packageJsonPath = join(process.cwd(), 'package.json');
+  const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf-8'));
+  const deps = packageJson.devDependencies || {};
+
+  // Map tool names to their package names in package.json
+  const toolPackageMap = {
+    'vite': 'vite',
+    'rsbuild': '@rsbuild/core',
+    'rspack': '@rspack/core',
+    'rolldown': 'rolldown',
+    'esbuild': 'esbuild',
+    'bun': 'bun',
+  };
+
+  const versions = {};
+  for (const [tool, packageName] of Object.entries(toolPackageMap)) {
+    if (deps[packageName]) {
+      let version = deps[packageName];
+      if (version.startsWith('npm:')) {
+        // Extract version from "npm:package@version" format
+        // e.g., "npm:rolldown-vite@7.1.16" -> "7.1.16"
+        const match = version.match(/@([^@]+)$/);
+        version = match ? match[1] : version;
+      }
+      versions[tool] = version;
+    }
+  }
+
+  return versions;
 }
 
 function walkDirectory(dir) {
@@ -212,6 +269,7 @@ function displayResults(results) {
     const stddevPadded = stddevMs.padStart(6); // Max: "999.99"
     return {
       tool: result.tool,
+      version: result.version,
       time: `${meanPadded} ms ± ${stddevPadded} ms`,
       js: result.jsSize > 0 ? formatSize(result.jsSize) : 'not found',
       css: result.cssSize > 0 ? formatSize(result.cssSize) : 'not found',
@@ -221,6 +279,7 @@ function displayResults(results) {
 
   const colWidths = {
     tool: Math.max(4, ...data.map(d => d.tool.length)),
+    version: Math.max(7, ...data.map(d => d.version.length)),
     time: 25,
     js: Math.max(2, ...data.map(d => d.js.length)),
     css: Math.max(3, ...data.map(d => d.css.length)),
@@ -230,6 +289,7 @@ function displayResults(results) {
   // Print markdown table header
   console.log(
     '| ' + 'Tool'.padEnd(colWidths.tool) +
+    ' | ' + 'Version'.padEnd(colWidths.version) +
     ' | ' + 'Time (mean ± σ)'.padEnd(colWidths.time) +
     ' | ' + 'JS'.padEnd(colWidths.js) +
     ' | ' + 'CSS'.padEnd(colWidths.css) +
@@ -239,6 +299,7 @@ function displayResults(results) {
 
   console.log(
     '| ' + '-'.repeat(colWidths.tool) +
+    ' | ' + '-'.repeat(colWidths.version) +
     ' | ' + '-'.repeat(colWidths.time - 1) + ':' +
     ' | ' + '-'.repeat(colWidths.js) +
     ' | ' + '-'.repeat(colWidths.css) +
@@ -250,6 +311,7 @@ function displayResults(results) {
   for (const row of data) {
     console.log(
       '| ' + row.tool.padEnd(colWidths.tool) +
+      ' | ' + row.version.padEnd(colWidths.version) +
       ' | ' + row.time.padStart(colWidths.time) +
       ' | ' + row.js.padEnd(colWidths.js) +
       ' | ' + row.css.padEnd(colWidths.css) +
