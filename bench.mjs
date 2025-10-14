@@ -75,12 +75,21 @@ function escapeShellArg(arg) {
 
 // Run benchmark for all tools
 const tools = ['vite', 'rsbuild', 'rspack', 'rolldown', 'esbuild' /*, 'bun' */];
+const toolDisplayNames = {
+  'vite': 'rolldown-vite',
+  'rsbuild': 'rsbuild',
+  'rspack': 'rspack',
+  'rolldown': 'rolldown',
+  'esbuild': 'esbuild',
+  'bun': 'bun'
+};
 const tempJsonFile = '.bench-temp.json';
 
 // Build hyperfine command with proper quoting
 let cmd = `${hyperfineBin} --export-json ${escapeShellArg(tempJsonFile)}`;
 for (const tool of tools) {
-  cmd += ` -n ${escapeShellArg(tool)} ${escapeShellArg(`node --run build:${tool}`)}`;
+  const displayName = toolDisplayNames[tool] || tool;
+  cmd += ` -n ${escapeShellArg(displayName)} ${escapeShellArg(`node --run build:${tool}`)}`;
 }
 
 console.log(`Running benchmarks for: ${tools.join(', ')}`);
