@@ -31,12 +31,12 @@ jobs:
       - name: Test individual builds
         run: |
           cd apps/10000
-          # node --run build:vite
-          # node --run build:rsbuild
-          # node --run build:rspack
-          # node --run build:rolldown
-          # node --run build:esbuild
-          node --run build:bun
+          node --run build:vite
+          node --run build:rsbuild
+          node --run build:rspack
+          node --run build:rolldown
+          node --run build:esbuild
+          # node --run build:bun
         shell: bash
 
       - name: Run benchmark
