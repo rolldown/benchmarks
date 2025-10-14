@@ -12,7 +12,11 @@
 
 ## Configuration
 
-All tools are configured to use a minimal configuration that enables minification and sourcemaps (or "production mode" if available) to simulate production usage.
+All tools are configured to use a minimal configuration that:
+* enables production mode
+    * enables minification
+    * enables sourcemaps
+* disables gzip
 
 ## How to run
 
