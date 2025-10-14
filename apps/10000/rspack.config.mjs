@@ -15,11 +15,6 @@ export default defineConfig({
 	optimization: {
 		minimize: true,
 	},
-	performance: {
-		printFileSize: {
-			compressed: false // turn off gzip
-		}
-	},
 	module: {
 		rules: [
 			{
