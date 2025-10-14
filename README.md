@@ -52,35 +52,35 @@ Due to different native languages and architectural differences, the results may
 
 ### Ubuntu Latest (updated 2025-10-14)
 
-| Tool          | Time (mean ± σ)           | JS        | CSS       | Sourcemaps |
-| ------------- | ------------------------: | --------- | --------- | ---------- |
-| rolldown-vite |    2182.52 ms ±  18.13 ms | not found | not found | not found  |
-| rspack        |    4866.52 ms ±  39.56 ms | 5.18 MB   | not found | 12.34 MB   |
-| rolldown      |    1687.87 ms ±  23.62 ms | 5.28 MB   | 37 B      | 13.00 MB   |
-| rsbuild       |    4661.63 ms ±  54.30 ms | 5.78 MB   | not found | 12.59 MB   |
-| esbuild       |    1614.10 ms ±  28.10 ms | 5.90 MB   | 38 B      | 14.35 MB   |
+| Tool          | Version       | Time (mean ± σ)           | JS      | CSS       | Sourcemaps |
+| ------------- | ------------- | ------------------------: | ------- | --------- | ---------- |
+| rspack        | 1.5.8         |    4327.65 ms ±  67.00 ms | 5.18 MB | not found | 12.34 MB   |
+| rolldown      | 1.0.0-beta.43 |    1544.74 ms ±  25.74 ms | 5.28 MB | 37 B      | 13.00 MB   |
+| rolldown-vite | 7.1.16        |    2021.03 ms ±  20.88 ms | 5.28 MB | 1 B       | 12.79 MB   |
+| rsbuild       | 1.5.17        |    4229.86 ms ±  48.36 ms | 5.78 MB | not found | 12.59 MB   |
+| esbuild       | 0.25.10       |    1531.80 ms ±  13.67 ms | 5.90 MB | 38 B      | 14.35 MB   |
 
 
 ### macOS Latest (updated 2025-10-14)
 
-| Tool          | Time (mean ± σ)           | JS        | CSS       | Sourcemaps |
-| ------------- | ------------------------: | --------- | --------- | ---------- |
-| rolldown-vite |    2173.79 ms ± 191.45 ms | not found | not found | not found  |
-| rspack        |    6452.93 ms ± 780.28 ms | 5.18 MB   | not found | 12.34 MB   |
-| rolldown      |    1469.96 ms ± 198.32 ms | 5.28 MB   | 37 B      | 13.00 MB   |
-| rsbuild       |   5448.34 ms ± 1391.52 ms | 5.78 MB   | not found | 12.59 MB   |
-| esbuild       |    1221.16 ms ± 166.48 ms | 5.90 MB   | 38 B      | 14.35 MB   |
+| Tool          | Version       | Time (mean ± σ)           | JS      | CSS       | Sourcemaps |
+| ------------- | ------------- | ------------------------: | ------- | --------- | ---------- |
+| rspack        | 1.5.8         |   4939.43 ms ± 1224.44 ms | 5.18 MB | not found | 12.34 MB   |
+| rolldown      | 1.0.0-beta.43 |    1293.02 ms ± 210.98 ms | 5.28 MB | 37 B      | 13.00 MB   |
+| rolldown-vite | 7.1.16        |    1893.72 ms ± 203.04 ms | 5.28 MB | 1 B       | 12.79 MB   |
+| rsbuild       | 1.5.17        |   5191.51 ms ± 1036.21 ms | 5.78 MB | not found | 12.59 MB   |
+| esbuild       | 0.25.10       |    1126.55 ms ± 172.00 ms | 5.90 MB | 38 B      | 14.35 MB   |
 
 
 ### Windows Latest (updated 2025-10-14)
 
-| Tool          | Time (mean ± σ)           | JS        | CSS       | Sourcemaps |
-| ------------- | ------------------------: | --------- | --------- | ---------- |
-| rolldown-vite |    3628.95 ms ±  29.27 ms | not found | not found | not found  |
-| rspack        |    6205.80 ms ±  43.15 ms | 5.18 MB   | not found | 12.76 MB   |
-| rolldown      |    2491.39 ms ±  23.52 ms | 5.28 MB   | 37 B      | 13.42 MB   |
-| rsbuild       |    6075.80 ms ± 106.34 ms | 5.78 MB   | not found | 13.01 MB   |
-| esbuild       |    2539.38 ms ±  49.31 ms | 5.90 MB   | 38 B      | 14.77 MB   |
+| Tool          | Version       | Time (mean ± σ)           | JS        | CSS       | Sourcemaps |
+| ------------- | ------------- | ------------------------: | --------- | --------- | ---------- |
+| esbuild       | 0.25.10       |     174.30 ms ±  33.68 ms | not found | not found | not found  |
+| rspack        | 1.5.8         |    6463.55 ms ± 103.09 ms | 5.18 MB   | not found | 12.76 MB   |
+| rolldown      | 1.0.0-beta.43 |    2496.46 ms ±  19.78 ms | 5.28 MB   | 37 B      | 13.42 MB   |
+| rolldown-vite | 7.1.16        |    3635.87 ms ±  27.38 ms | 5.28 MB   | 1 B       | 13.21 MB   |
+| rsbuild       | 1.5.17        |    6116.56 ms ±  39.32 ms | 5.78 MB   | not found | 13.01 MB   |
 
 
 <!-- BENCHMARK_END -->
