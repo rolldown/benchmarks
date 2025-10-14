@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { execSync } from 'node:child_process';
+import { execSync, spawnSync } from 'node:child_process';
 import { existsSync, readdirSync, statSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
@@ -65,18 +65,27 @@ if (!existsSync(app)) {
 // Run benchmark for all tools
 const tools = ['vite', 'rsbuild', 'rspack', 'rolldown', 'esbuild', 'bun'];
 const tempJsonFile = '.bench-temp.json';
-let cmd = `${hyperfineBin} --export-json '${tempJsonFile}'`;
 
-// Add tool commands
+// Build hyperfine arguments
+const args = ['--export-json', tempJsonFile];
 for (const tool of tools) {
-  cmd += ` -n '${tool}' 'node --run build:${tool}'`;
+  args.push('-n', tool, `node --run build:${tool}`);
 }
 
 console.log(`Running benchmarks for: ${tools.join(', ')}`);
 console.log(`App: ${app}`);
 console.log('');
 
-execSync(cmd, { stdio: 'inherit', shell: true, cwd: app });
+const result = spawnSync(hyperfineBin, args, {
+  stdio: 'inherit',
+  cwd: app,
+  shell: true
+});
+
+if (result.error || result.status !== 0) {
+  console.error('Benchmark failed');
+  process.exit(result.status || 1);
+}
 
 // Parse benchmark results
 const benchmarkJson = JSON.parse(readFileSync(join(app, tempJsonFile), 'utf-8'));
