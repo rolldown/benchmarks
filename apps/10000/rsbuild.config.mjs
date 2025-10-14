@@ -8,7 +8,9 @@ export default defineConfig({
     progressBar: false
   },
   output: {
-    distPath: 'dist-rsbuild',
+    distPath: {
+      root: 'dist-rsbuild'
+    },
     sourceMap: true
   }
 });
