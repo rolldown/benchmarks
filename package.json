@@ -3,6 +3,9 @@
 	"version": "1.0.0",
 	"license": "ISC",
 	"packageManager": "pnpm@10.18.2",
+	"scripts": {
+		"bench": "./bench.sh"
+	},
 	"devDependencies": {
 		"@iconify-icons/material-symbols": "^1.2.58",
 		"@iconify/react": "^5.0.1",
