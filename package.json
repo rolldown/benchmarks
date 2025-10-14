@@ -4,7 +4,7 @@
 	"license": "ISC",
 	"packageManager": "pnpm@10.18.2",
 	"scripts": {
-		"bench": "./bench.sh"
+		"bench": "node bench.mjs"
 	},
 	"devDependencies": {
 		"@iconify-icons/material-symbols": "^1.2.58",
