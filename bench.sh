@@ -8,6 +8,7 @@ set -e
 # Default values
 APP="apps/10000"
 SET="all"
+JSON_OUTPUT=""
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -20,6 +21,10 @@ while [[ $# -gt 0 ]]; do
       SET="$2"
       shift 2
       ;;
+    --json)
+      JSON_OUTPUT="$2"
+      shift 2
+      ;;
     -h|--help)
       echo "Usage: $0 [OPTIONS]"
       echo ""
@@ -28,10 +33,12 @@ while [[ $# -gt 0 ]]; do
       echo "                   Available: apps/1000, apps/3000, apps/5000, apps/10000, apps/rome, apps/three10x"
       echo "  --set SET        Benchmark set to run (default: all)"
       echo "                   Available: set1 (vite, rsbuild), set2 (rspack, rolldown, esbuild, bun), all"
+      echo "  --json FILE      Export results to JSON file"
       echo "  -h, --help       Show this help message"
       echo ""
       echo "Example:"
       echo "  $0 --app apps/5000 --set set1"
+      echo "  $0 --set set2 --json results.json"
       exit 0
       ;;
     *)
@@ -60,7 +67,14 @@ fi
 # Define benchmark sets
 run_benchmark() {
     local tools=("$@")
+    local set_suffix="$1"
     local cmd="hyperfine --warmup 1 --runs 3"
+
+    # Add JSON export if specified
+    if [ -n "$JSON_OUTPUT" ]; then
+        local json_file="${JSON_OUTPUT%.json}_${set_suffix}.json"
+        cmd="$cmd --export-json '$json_file'"
+    fi
 
     for tool in "${tools[@]}"; do
         cmd="$cmd 'cd $APP && node --run build:$tool'"
