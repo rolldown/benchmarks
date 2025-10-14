@@ -4,9 +4,6 @@
 	"license": "ISC",
 	"packageManager": "pnpm@10.18.2",
 	"devDependencies": {
-		"@farmfe/cli": "^1.0.5",
-		"@farmfe/core": "^1.7.11",
-		"@farmfe/plugin-react": "^1.2.6",
 		"@iconify-icons/material-symbols": "^1.2.58",
 		"@iconify/react": "^5.0.1",
 		"@rollup/plugin-terser": "^0.4.4",
