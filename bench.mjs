@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { execSync, spawnSync } from 'node:child_process';
+import { execSync } from 'node:child_process';
 import { existsSync, readdirSync, statSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
@@ -62,30 +62,32 @@ if (!existsSync(app)) {
   process.exit(1);
 }
 
+// Helper function to escape shell arguments cross-platform
+function escapeShellArg(arg) {
+  if (process.platform === 'win32') {
+    // Windows: wrap in double quotes and escape inner double quotes
+    return `"${arg.replace(/"/g, '\\"')}"`;
+  } else {
+    // Unix: wrap in single quotes and escape single quotes
+    return `'${arg.replace(/'/g, "'\\''")}'`;
+  }
+}
+
 // Run benchmark for all tools
 const tools = ['vite', 'rsbuild', 'rspack', 'rolldown', 'esbuild', 'bun'];
 const tempJsonFile = '.bench-temp.json';
 
-// Build hyperfine arguments
-const args = ['--export-json', tempJsonFile];
+// Build hyperfine command with proper quoting
+let cmd = `${hyperfineBin} --export-json ${escapeShellArg(tempJsonFile)}`;
 for (const tool of tools) {
-  args.push('-n', tool, `node --run build:${tool}`);
+  cmd += ` -n ${escapeShellArg(tool)} ${escapeShellArg(`node --run build:${tool}`)}`;
 }
 
 console.log(`Running benchmarks for: ${tools.join(', ')}`);
 console.log(`App: ${app}`);
 console.log('');
 
-const result = spawnSync(hyperfineBin, args, {
-  stdio: 'inherit',
-  cwd: app,
-  shell: true
-});
-
-if (result.error || result.status !== 0) {
-  console.error('Benchmark failed');
-  process.exit(result.status || 1);
-}
+execSync(cmd, { stdio: 'inherit', shell: true, cwd: app });
 
 // Parse benchmark results
 const benchmarkJson = JSON.parse(readFileSync(join(app, tempJsonFile), 'utf-8'));
