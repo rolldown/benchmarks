@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["helpers:pinGitHubActionDigestsToSemver"],
+  "timezone": "Asia/Shanghai",
+  "automerge": true,
+  "automergeType": "pr",
+  "automergeSchedule": ["at any time"],
+  "updateNotScheduled": false,
+  "postUpdateOptions": ["pnpmDedupe"],
+  "packageRules": [
+    {
+      "groupName": "github actions",
+      "matchManagers": ["github-actions"],
+      "schedule": ["before 9am on monday"]
+    },
+    {
+      "groupName": "npm packages",
+      "matchManagers": ["npm"],
+      "schedule": ["before 9am"]
+    }
+  ]
+}
