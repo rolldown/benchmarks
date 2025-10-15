@@ -260,6 +260,9 @@ function getFileSizes(appDir, tools) {
 }
 
 function displayResults(results) {
+  // Find the minimum mean time for comparison
+  const minMean = Math.min(...results.map(r => r.mean));
+
   // Calculate column widths
   const data = results.map(result => {
     const meanMs = (result.mean * 1000).toFixed(2);
@@ -267,10 +270,12 @@ function displayResults(results) {
     // Pad to format: "XXXX.XX ms ± XXX.XX ms"
     const meanPadded = meanMs.padStart(7);   // Max: "9999.99"
     const stddevPadded = stddevMs.padStart(6); // Max: "999.99"
+    const comparison = (result.mean / minMean).toFixed(1) + 'x';
     return {
       tool: result.tool,
       version: result.version,
       time: `${meanPadded} ms ± ${stddevPadded} ms`,
+      comparison: comparison,
       js: result.jsSize > 0 ? formatSize(result.jsSize) : 'not found',
       css: result.cssSize > 0 ? formatSize(result.cssSize) : 'not found',
       maps: result.mapSize > 0 ? formatSize(result.mapSize) : 'not found',
@@ -281,6 +286,7 @@ function displayResults(results) {
     tool: Math.max(4, ...data.map(d => d.tool.length)),
     version: Math.max(7, ...data.map(d => d.version.length)),
     time: 25,
+    comparison: Math.max(10, ...data.map(d => d.comparison.length)),
     js: Math.max(2, ...data.map(d => d.js.length)),
     css: Math.max(3, ...data.map(d => d.css.length)),
     maps: Math.max(10, ...data.map(d => d.maps.length)),
@@ -291,6 +297,7 @@ function displayResults(results) {
     '| ' + 'Tool'.padEnd(colWidths.tool) +
     ' | ' + 'Version'.padEnd(colWidths.version) +
     ' | ' + 'Time (mean ± σ)'.padEnd(colWidths.time) +
+    ' | ' + 'Comparison'.padEnd(colWidths.comparison) +
     ' | ' + 'JS'.padEnd(colWidths.js) +
     ' | ' + 'CSS'.padEnd(colWidths.css) +
     ' | ' + 'Sourcemaps'.padEnd(colWidths.maps) +
@@ -301,6 +308,7 @@ function displayResults(results) {
     '| ' + '-'.repeat(colWidths.tool) +
     ' | ' + '-'.repeat(colWidths.version) +
     ' | ' + '-'.repeat(colWidths.time - 1) + ':' +
+    ' | ' + '-'.repeat(colWidths.comparison) +
     ' | ' + '-'.repeat(colWidths.js) +
     ' | ' + '-'.repeat(colWidths.css) +
     ' | ' + '-'.repeat(colWidths.maps) +
@@ -313,6 +321,7 @@ function displayResults(results) {
       '| ' + row.tool.padEnd(colWidths.tool) +
       ' | ' + row.version.padEnd(colWidths.version) +
       ' | ' + row.time.padStart(colWidths.time) +
+      ' | ' + row.comparison.padEnd(colWidths.comparison) +
       ' | ' + row.js.padEnd(colWidths.js) +
       ' | ' + row.css.padEnd(colWidths.css) +
       ' | ' + row.maps.padEnd(colWidths.maps) +
