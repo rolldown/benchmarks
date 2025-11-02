@@ -25,5 +25,6 @@
       "schedule": ["before 9am on monday"],
       "matchDepTypes": ["dependencies"]
     }
-  ]
+  ],
+  "ignorePaths": ["apps/**"]
 }
