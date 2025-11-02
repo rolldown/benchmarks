@@ -14,9 +14,16 @@
       "schedule": ["before 9am on monday"]
     },
     {
+      "groupName": "bundlers",
+      "matchManagers": ["npm"],
+      "schedule": ["before 9am"],
+      "matchDepTypes": ["devDependencies"]
+    },
+    {
       "groupName": "npm packages",
       "matchManagers": ["npm"],
-      "schedule": ["before 9am"]
+      "schedule": ["before 9am on monday"],
+      "matchDepTypes": ["dependencies"]
     }
   ]
 }
