@@ -9,6 +9,12 @@ on:
       - .github/workflows/benchmark.yml
       - bench.mjs
       - pnpm-lock.yaml
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - .github/workflows/benchmark.yml
+      - bench.mjs
+      - pnpm-lock.yaml
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}-${{ github.event.pull_request.number || github.sha }}
@@ -56,6 +62,7 @@ jobs:
   update-readme:
     needs: benchmark
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     permissions:
       contents: write
 
