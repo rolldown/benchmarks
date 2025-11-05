@@ -1,11 +1,15 @@
 import { defineConfig } from "@rspack/cli";
+import { fileURLToPath } from "node:url";
+import path from "node:path";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
 	entry: "./src/index.jsx",
 	devtool: "source-map",
 	target: ["web", "es2022"],
 	output: {
-		path: "dist-rspack",
+		path: path.resolve(__dirname, "dist-rspack"),
 		filename: "rspack.js",
 		clean: false,
 	},
