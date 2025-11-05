@@ -8,7 +8,7 @@ export default defineConfig({
   devtool: "source-map",
   target: ["node", "es2022"],
   output: {
-    path: "dist-rspack",
+    path: path.resolve(import.meta.dirname, "dist-rspack"),
     filename: "rspack.js",
     clean: false,
   },
