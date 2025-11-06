@@ -20,7 +20,7 @@
 		"@rollup/plugin-terser": "0.4.4",
 		"@rollup/plugin-typescript": "12.3.0",
 		"@rsbuild/core": "1.6.2",
-		"@rsbuild/plugin-react": "1.4.1",
+		"@rsbuild/plugin-react": "1.4.2",
 		"@rspack/cli": "1.6.1",
 		"@rspack/core": "1.6.1",
 		"@swc/core": "1.15.0",
@@ -32,6 +32,6 @@
 		"rollup-plugin-esbuild": "6.2.1",
 		"rollup-plugin-swc3": "0.12.1",
 		"terser-webpack-plugin": "5.3.14",
-		"vite": "npm:rolldown-vite@7.2.0"
+		"vite": "npm:rolldown-vite@7.2.1"
 	}
 }
