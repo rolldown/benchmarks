@@ -1,13 +1,17 @@
 import { defineConfig } from "@rspack/cli";
+import { fileURLToPath } from "node:url";
+import path from "node:path";
 
 import TerserPlugin from "terser-webpack-plugin";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   entry: "./entry.js",
   devtool: "source-map",
   target: ["web", "es2022"],
   output: {
-    path: "dist-rspack",
+    path: path.resolve(__dirname, "dist-rspack"),
     filename: "rspack.js",
     clean: false,
   },
