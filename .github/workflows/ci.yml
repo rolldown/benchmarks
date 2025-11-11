@@ -46,9 +46,7 @@ jobs:
           node --run build:rspack
           node --run build:rolldown
           node --run build:esbuild
-          if [ "$RUNNER_OS" != "Windows" ]; then
-            node --run build:bun
-          fi
+          node --run build:bun
         shell: bash
 
       - name: Run benchmark
