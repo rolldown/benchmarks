@@ -11,18 +11,18 @@
     {
       "groupName": "github actions",
       "matchManagers": ["github-actions"],
-      "schedule": ["before 9am on monday"]
+      "schedule": ["before 11am on monday"]
     },
     {
       "groupName": "bundlers",
       "matchManagers": ["npm"],
-      "schedule": ["before 9am"],
+      "schedule": ["before 11am"],
       "matchDepTypes": ["devDependencies"]
     },
     {
       "groupName": "npm packages",
       "matchManagers": ["npm"],
-      "schedule": ["before 9am on monday"],
+      "schedule": ["before 11am on monday"],
       "matchDepTypes": ["dependencies"]
     }
   ],
