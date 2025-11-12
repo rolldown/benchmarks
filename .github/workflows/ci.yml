@@ -36,6 +36,8 @@ jobs:
 
       - uses: oxc-project/setup-node@fdbf0dfd334c4e6d56ceeb77d91c76339c2a0885 # v1.0.4
 
+      - uses: oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76 # v2.0.2
+
       - name: Install hyperfine
         uses: taiki-e/install-action@44c6d64aa62cd779e873306675c7a58e86d6d532 # v2.62.49
         with:
@@ -72,7 +74,6 @@ jobs:
           ls -lh dist-esbuild
 
       - name: Test Bun build
-        if: runner.os != 'Windows'
         working-directory: apps/10000
         run: |
           node --run build:bun
