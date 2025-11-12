@@ -144,12 +144,12 @@ const results = benchmarkJson.results.map((result) => {
   };
 });
 
-// Sort by total output size (JS + CSS)
-results.sort((a, b) => a.totalSize - b.totalSize);
+// Sort by build time
+results.sort((a, b) => a.mean - b.mean);
 
 // Display combined results
 console.log('');
-console.log('Benchmark Results (sorted by output size):');
+console.log('Benchmark Results (sorted by time):');
 displayResults(results);
 
 // Clean up temp file
@@ -267,14 +267,14 @@ function displayResults(results) {
   const data = results.map(result => {
     const meanMs = (result.mean * 1000).toFixed(2);
     const stddevMs = (result.stddev * 1000).toFixed(2);
-    // Pad to format: "XXXX.XX ms ± XXX.XX ms"
+    // Pad to format: "XXXX.XX ± XXX.XX ms"
     const meanPadded = meanMs.padStart(7);   // Max: "9999.99"
     const stddevPadded = stddevMs.padStart(6); // Max: "999.99"
     const comparison = (result.mean / minMean).toFixed(1) + 'x';
     return {
       tool: result.tool,
       version: result.version,
-      time: `${meanPadded} ms ± ${stddevPadded} ms`,
+      time: `${meanPadded} ± ${stddevPadded} ms`,
       comparison: comparison,
       js: result.jsSize > 0 ? formatSize(result.jsSize) : 'not found',
       css: result.cssSize > 0 ? formatSize(result.cssSize) : 'not found',
