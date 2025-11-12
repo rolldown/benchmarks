@@ -172,31 +172,35 @@ if (jsonOutput) {
 }
 
 function getToolVersions() {
-  const packageJsonPath = join(process.cwd(), 'package.json');
-  const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf-8'));
-  const deps = packageJson.devDependencies || {};
-
-  // Map tool names to their package names in package.json
-  const toolPackageMap = {
-    'vite': 'vite',
-    'rsbuild': '@rsbuild/core',
-    'rspack': '@rspack/core',
-    'rolldown': 'rolldown',
-    'esbuild': 'esbuild',
-    'bun': 'bun',
+  // Map tool names to their version commands
+  const toolCommandMap = {
+    'vite': 'pnpm vite --version',
+    'rsbuild': 'pnpm rsbuild --version',
+    'rspack': 'pnpm rspack --version',
+    'rolldown': 'pnpm rolldown --version',
+    'esbuild': 'pnpm esbuild --version',
+    'bun': 'bun --version',
   };
 
   const versions = {};
-  for (const [tool, packageName] of Object.entries(toolPackageMap)) {
-    if (deps[packageName]) {
-      let version = deps[packageName];
-      if (version.startsWith('npm:')) {
-        // Extract version from "npm:package@version" format
-        // e.g., "npm:rolldown-vite@7.1.16" -> "7.1.16"
-        const match = version.match(/@([^@]+)$/);
-        version = match ? match[1] : version;
-      }
-      versions[tool] = version;
+  for (const [tool, command] of Object.entries(toolCommandMap)) {
+    try {
+      const output = execSync(command, {
+        encoding: 'utf-8',
+        stdio: ['pipe', 'pipe', 'pipe'],
+        shell: true
+      }).trim();
+
+      // Extract version number from various formats:
+      // - "0.27.0" (esbuild, bun)
+      // - "vite/7.2.2 darwin-arm64 node-v24.11.0" (vite)
+      // - "rspack/1.6.1 darwin-arm64 node-v24.11.0" (rspack)
+      // - "Rsbuild v1.6.3\n\nrsbuild/1.6.3 ..." (rsbuild)
+      // - "rolldown v1.0.0-beta.48" (rolldown)
+      const match = output.match(/(?:^|[/\s]v?)(\d+\.\d+\.\d+(?:-[^\s]+)?)/);
+      versions[tool] = match ? match[1] : 'unknown';
+    } catch (error) {
+      versions[tool] = 'unknown';
     }
   }
 
