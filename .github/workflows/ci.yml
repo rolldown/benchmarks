@@ -27,6 +27,9 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
 
     steps:
       - uses: taiki-e/checkout-action@b13d20b7cda4e2f325ef19895128f7ff735c0b3d # v1.3.1
@@ -38,27 +41,45 @@ jobs:
         with:
           tool: hyperfine
 
-      - name: Test individual builds
+      - name: Test Vite build
+        working-directory: apps/10000
         run: |
-          cd apps/10000
           node --run build:vite
           ls -lh dist-vite
+
+      - name: Test Rsbuild build
+        working-directory: apps/10000
+        run: |
           node --run build:rsbuild
           ls -lh dist-rsbuild
+
+      - name: Test Rspack build
+        working-directory: apps/10000
+        run: |
           node --run build:rspack
           ls -lh dist-rspack
+
+      - name: Test Rolldown build
+        working-directory: apps/10000
+        run: |
           node --run build:rolldown
           ls -lh dist-rolldown
+
+      - name: Test esbuild build
+        working-directory: apps/10000
+        run: |
           node --run build:esbuild
-          if [ "$RUNNER_OS" != "Windows" ]; then
-            node --run build:bun
-            ls -lh dist-bun
-          fi
-        shell: bash
+          ls -lh dist-esbuild
+
+      - name: Test Bun build
+        if: runner.os != 'Windows'
+        working-directory: apps/10000
+        run: |
+          node --run build:bun
+          ls -lh dist-bun
 
       - name: Run benchmark
         run: node bench.mjs --app apps/10000 > benchmark-output.txt
-        shell: bash
 
       - name: Upload benchmark results
         uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
