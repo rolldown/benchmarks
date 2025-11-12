@@ -42,12 +42,17 @@ jobs:
         run: |
           cd apps/10000
           node --run build:vite
+          ls -lh dist-vite
           node --run build:rsbuild
+          ls -lh dist-rsbuild
           node --run build:rspack
+          ls -lh dist-rspack
           node --run build:rolldown
+          ls -lh dist-rolldown
           node --run build:esbuild
           if [ "$RUNNER_OS" != "Windows" ]; then
             node --run build:bun
+            ls -lh dist-bun
           fi
         shell: bash
 
