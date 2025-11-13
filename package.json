@@ -2,7 +2,7 @@
 	"name": "performance-compare-ext",
 	"version": "1.0.0",
 	"license": "ISC",
-	"packageManager": "pnpm@10.21.0",
+	"packageManager": "pnpm@10.22.0",
 	"scripts": {
 		"bench": "node bench.mjs"
 	},
