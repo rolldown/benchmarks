@@ -5,16 +5,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - .github/workflows/benchmark.yml
-      - bench.mjs
-      - pnpm-lock.yaml
   pull_request:
     types: [opened, synchronize]
-    paths:
-      - .github/workflows/benchmark.yml
-      - bench.mjs
-      - pnpm-lock.yaml
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}-${{ github.event.pull_request.number || github.sha }}
