@@ -50,40 +50,40 @@ Due to different native languages and architectural differences, the results may
 
 <!-- BENCHMARK_START -->
 
-### Ubuntu Latest (updated 2025-11-30)
+### Ubuntu Latest (updated 2025-12-01)
 
 | Tool          | Version       | Time (mean ± σ)           | Comparison | JS      | CSS       | Sourcemaps |
 | ------------- | ------------- | ------------------------: | ---------- | ------- | --------- | ---------- |
-| bun           | 1.3.3         |        760.75 ±  42.10 ms | 1.0x       | 5.34 MB | not found | 12.56 MB   |
-| rolldown      | 1.0.0-beta.52 |       1630.12 ±  43.55 ms | 2.1x       | 5.28 MB | 37 B      | 13.00 MB   |
-| esbuild       | 0.27.0        |       1715.96 ±  23.71 ms | 2.3x       | 5.90 MB | 38 B      | 14.35 MB   |
-| rolldown-vite | 7.2.8         |       2102.08 ±  28.40 ms | 2.8x       | 5.28 MB | 1 B       | 12.79 MB   |
-| rspack        | 1.6.5         |       4118.35 ±  74.16 ms | 5.4x       | 5.18 MB | not found | 12.34 MB   |
-| rsbuild       | 1.6.10        |       4223.04 ±  24.31 ms | 5.6x       | 5.78 MB | not found | 12.46 MB   |
+| bun           | 1.3.3         |        759.32 ±  48.06 ms | 1.0x       | 5.34 MB | not found | 12.56 MB   |
+| rolldown      | 1.0.0-beta.52 |       1583.83 ±  32.72 ms | 2.1x       | 5.28 MB | 37 B      | 13.00 MB   |
+| esbuild       | 0.27.0        |       1710.26 ±  25.91 ms | 2.3x       | 5.90 MB | 38 B      | 14.35 MB   |
+| rolldown-vite | 7.2.9         |       2092.79 ±  38.96 ms | 2.8x       | 5.28 MB | 1 B       | 12.79 MB   |
+| rspack        | 1.6.5         |       3993.13 ±  66.11 ms | 5.3x       | 5.18 MB | not found | 12.34 MB   |
+| rsbuild       | 1.6.11        |       4195.82 ±  55.44 ms | 5.5x       | 5.78 MB | not found | 12.46 MB   |
 
 
-### macOS Latest (updated 2025-11-30)
-
-| Tool          | Version       | Time (mean ± σ)           | Comparison | JS      | CSS       | Sourcemaps |
-| ------------- | ------------- | ------------------------: | ---------- | ------- | --------- | ---------- |
-| bun           | 1.3.3         |        447.01 ±  24.12 ms | 1.0x       | 5.34 MB | not found | 12.56 MB   |
-| esbuild       | 0.27.0        |       1042.88 ± 174.14 ms | 2.3x       | 5.90 MB | 38 B      | 14.35 MB   |
-| rolldown      | 1.0.0-beta.52 |       1203.52 ± 148.11 ms | 2.7x       | 5.28 MB | 37 B      | 13.00 MB   |
-| rolldown-vite | 7.2.8         |       2670.02 ± 383.45 ms | 6.0x       | 5.28 MB | 1 B       | 12.79 MB   |
-| rspack        | 1.6.5         |      5870.52 ± 2206.48 ms | 13.1x      | 5.18 MB | not found | 12.34 MB   |
-| rsbuild       | 1.6.10        |      6993.77 ± 1310.48 ms | 15.6x      | 5.78 MB | not found | 12.46 MB   |
-
-
-### Windows Latest (updated 2025-11-30)
+### macOS Latest (updated 2025-12-01)
 
 | Tool          | Version       | Time (mean ± σ)           | Comparison | JS      | CSS       | Sourcemaps |
 | ------------- | ------------- | ------------------------: | ---------- | ------- | --------- | ---------- |
-| bun           | 1.3.3         |       2268.95 ± 104.81 ms | 1.0x       | 5.34 MB | not found | 13.11 MB   |
-| esbuild       | 0.27.0        |       2542.02 ±  41.32 ms | 1.1x       | 5.90 MB | 38 B      | 14.77 MB   |
-| rolldown      | 1.0.0-beta.52 |       2637.02 ± 137.71 ms | 1.2x       | 5.28 MB | 37 B      | 13.42 MB   |
-| rolldown-vite | 7.2.8         |       3173.06 ±  35.87 ms | 1.4x       | 5.28 MB | 1 B       | 13.21 MB   |
-| rspack        | 1.6.5         |       5770.99 ± 145.47 ms | 2.5x       | 5.18 MB | not found | 12.76 MB   |
-| rsbuild       | 1.6.10        |       5910.38 ±  37.81 ms | 2.6x       | 5.78 MB | not found | 12.88 MB   |
+| bun           | 1.3.3         |        747.08 ±  34.09 ms | 1.0x       | 5.34 MB | not found | 12.56 MB   |
+| esbuild       | 0.27.0        |       1748.13 ± 524.69 ms | 2.3x       | 5.90 MB | 38 B      | 14.35 MB   |
+| rolldown      | 1.0.0-beta.52 |       1979.01 ± 398.58 ms | 2.6x       | 5.28 MB | 37 B      | 13.00 MB   |
+| rolldown-vite | 7.2.9         |       2345.53 ± 307.91 ms | 3.1x       | 5.28 MB | 1 B       | 12.79 MB   |
+| rsbuild       | 1.6.11        |      6006.18 ± 1132.82 ms | 8.0x       | 5.78 MB | not found | 12.46 MB   |
+| rspack        | 1.6.5         |      6991.06 ± 1831.21 ms | 9.4x       | 5.18 MB | not found | 12.34 MB   |
+
+
+### Windows Latest (updated 2025-12-01)
+
+| Tool          | Version       | Time (mean ± σ)           | Comparison | JS      | CSS       | Sourcemaps |
+| ------------- | ------------- | ------------------------: | ---------- | ------- | --------- | ---------- |
+| bun           | 1.3.3         |       2278.97 ±  96.31 ms | 1.0x       | 5.34 MB | not found | 13.11 MB   |
+| esbuild       | 0.27.0        |       2587.99 ±  59.56 ms | 1.1x       | 5.90 MB | 38 B      | 14.77 MB   |
+| rolldown      | 1.0.0-beta.52 |       3037.33 ±  40.53 ms | 1.3x       | 5.28 MB | 37 B      | 13.42 MB   |
+| rolldown-vite | 7.2.9         |       3764.83 ± 337.15 ms | 1.7x       | 5.28 MB | 1 B       | 13.21 MB   |
+| rspack        | 1.6.5         |       6778.42 ± 677.58 ms | 3.0x       | 5.18 MB | not found | 12.76 MB   |
+| rsbuild       | 1.6.11        |       6929.61 ± 877.71 ms | 3.0x       | 5.78 MB | not found | 12.88 MB   |
 
 
 <!-- BENCHMARK_END -->
