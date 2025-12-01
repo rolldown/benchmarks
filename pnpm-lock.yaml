@@ -40,11 +40,11 @@ importers:
         specifier: 12.3.0
         version: 12.3.0(rollup@4.53.3)(tslib@2.8.1)(typescript@5.9.3)
       '@rsbuild/core':
-        specifier: 1.6.10
-        version: 1.6.10
+        specifier: 1.6.11
+        version: 1.6.11
       '@rsbuild/plugin-react':
         specifier: 1.4.2
-        version: 1.4.2(@rsbuild/core@1.6.10)
+        version: 1.4.2(@rsbuild/core@1.6.11)
       '@rspack/cli':
         specifier: 1.6.5
         version: 1.6.5(@rspack/core@1.6.5(@swc/helpers@0.5.17))(@types/express@4.17.23)(webpack@5.102.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.0))
@@ -76,8 +76,8 @@ importers:
         specifier: 5.3.14
         version: 5.3.14(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.0)(webpack@5.102.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.0))
       vite:
-        specifier: npm:rolldown-vite@7.2.8
-        version: rolldown-vite@7.2.8(@types/node@24.7.2)(esbuild@0.27.0)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1)
+        specifier: npm:rolldown-vite@7.2.9
+        version: rolldown-vite@7.2.9(@types/node@24.7.2)(esbuild@0.27.0)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1)
 
   apps/1000: {}
 
@@ -627,8 +627,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rsbuild/core@1.6.10':
-    resolution: {integrity: sha512-gAdI+H/xUsuEQikKlFUsxbr2f3uXfLU+3Z73wdcaQcNcvfmS3K+6vMyNYn6UFuCL5LPtXG9lwgc8cycToHgm5g==}
+  '@rsbuild/core@1.6.11':
+    resolution: {integrity: sha512-H/OAavDKfa/10prrn++bNbe2KGBo1opglQIq6+G38Mzb+44BM0sv/kn78K2sk2wpfmv4MwljeF1NvczFq2ttzQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -1774,8 +1774,8 @@ packages:
     resolution: {integrity: sha512-XQBQ3I8W1Cge0Seh+6gjj03LbmRFWuoszgK9ooCpwYIrhhoO80pfq4cUkU5DkknwfOfFteRwlZ56PYOGYyFWdg==}
     engines: {node: '>= 4'}
 
-  rolldown-vite@7.2.8:
-    resolution: {integrity: sha512-8wKihlF6EDF8grimwd7GPOhLkQkSIgj6Hlcp0CXhtO3HAXeUUqhgZmJmn07OF8e4PbTusMX6Yxmy1BptVRZsdw==}
+  rolldown-vite@7.2.9:
+    resolution: {integrity: sha512-Y+Q1FpIgAkK2RiAdeS1SxcvDsJaru1JUANFo1aiFFtuGCckhltIowoC/JMU740tFZDTJA5vg5CAl1RzHExNR/w==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2532,7 +2532,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.53.3':
     optional: true
 
-  '@rsbuild/core@1.6.10':
+  '@rsbuild/core@1.6.11':
     dependencies:
       '@rspack/core': 1.6.5(@swc/helpers@0.5.17)
       '@rspack/lite-tapable': 1.1.0
@@ -2540,9 +2540,9 @@ snapshots:
       core-js: 3.47.0
       jiti: 2.6.1
 
-  '@rsbuild/plugin-react@1.4.2(@rsbuild/core@1.6.10)':
+  '@rsbuild/plugin-react@1.4.2(@rsbuild/core@1.6.11)':
     dependencies:
-      '@rsbuild/core': 1.6.10
+      '@rsbuild/core': 1.6.11
       '@rspack/plugin-react-refresh': 1.5.2(react-refresh@0.18.0)
       react-refresh: 0.18.0
     transitivePeerDependencies:
@@ -3662,7 +3662,7 @@ snapshots:
 
   retry@0.13.1: {}
 
-  rolldown-vite@7.2.8(@types/node@24.7.2)(esbuild@0.27.0)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1):
+  rolldown-vite@7.2.9(@types/node@24.7.2)(esbuild@0.27.0)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1):
     dependencies:
       '@oxc-project/runtime': 0.99.0
       fdir: 6.5.0(picomatch@4.0.3)
