@@ -10,8 +10,8 @@
 		"@iconify-icons/material-symbols": "1.2.58",
 		"@iconify/react": "6.0.2",
 		"@types/glob": "9.0.0",
-		"react": "19.2.0",
-		"react-dom": "19.2.0"
+		"react": "19.2.1",
+		"react-dom": "19.2.1"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "29.0.0",
