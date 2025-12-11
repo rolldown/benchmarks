@@ -73,8 +73,8 @@ importers:
         specifier: 0.12.1
         version: 0.12.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(rollup@4.53.3)
       terser-webpack-plugin:
-        specifier: 5.3.15
-        version: 5.3.15(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1)(webpack@5.102.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1))
+        specifier: 5.3.16
+        version: 5.3.16(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1)(webpack@5.102.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1))
       vite:
         specifier: npm:rolldown-vite@7.2.10
         version: rolldown-vite@7.2.10(@types/node@24.7.2)(esbuild@0.27.1)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1)
@@ -2053,8 +2053,8 @@ packages:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
     engines: {node: '>=6'}
 
-  terser-webpack-plugin@5.3.15:
-    resolution: {integrity: sha512-PGkOdpRFK+rb1TzVz+msVhw4YMRT9txLF4kRqvJhGhCM324xuR3REBSHALN+l+sAhKUmz0aotnjp5D+P83mLhQ==}
+  terser-webpack-plugin@5.3.16:
+    resolution: {integrity: sha512-h9oBFCWrq78NyWWVcSwZarJkZ01c2AyGrzs1crmHZO3QUg9D61Wu4NPjBy69n7JqylFF5y+CsUZYmYEIZ3mR+Q==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
       '@swc/core': '*'
@@ -4072,7 +4072,7 @@ snapshots:
 
   tapable@2.3.0: {}
 
-  terser-webpack-plugin@5.3.15(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1)(webpack@5.102.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1)):
+  terser-webpack-plugin@5.3.16(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1)(webpack@5.102.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
@@ -4248,7 +4248,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.0
-      terser-webpack-plugin: 5.3.15(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1)(webpack@5.102.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1))
+      terser-webpack-plugin: 5.3.16(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1)(webpack@5.102.1(@swc/core@1.15.3(@swc/helpers@0.5.17))(esbuild@0.27.1))
       watchpack: 2.4.4
       webpack-sources: 3.3.3
     transitivePeerDependencies:
