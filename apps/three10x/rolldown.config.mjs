@@ -1,16 +1,17 @@
 import { defineConfig } from "rolldown";
 
 export default defineConfig({
-	input: {
-		main: "./entry.js",
-	},
-	define: {
-		"process.env.NODE_ENV": JSON.stringify("production"),
-	},
-	profilerNames: false,
-	output: {
-		minify: true,
-		sourcemap: true,
-		dir: "dist-rolldown",
-	},
+  input: {
+    main: "./entry.js",
+  },
+  transform: {
+    define: {
+      "process.env.NODE_ENV": JSON.stringify("production"),
+    },
+  },
+  output: {
+    minify: true,
+    sourcemap: true,
+    dir: "dist-rolldown",
+  },
 });
