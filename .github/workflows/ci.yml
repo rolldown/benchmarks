@@ -28,10 +28,10 @@ jobs:
 
       - uses: oxc-project/setup-node@8958a8e040102244b619c4a94fccb657a44b1c21 # v1.0.6
 
-      - uses: oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76 # v2.0.2
+      - uses: oven-sh/setup-bun@b7a1c7ccf290d58743029c4f6903da283811b979 # v2.1.0
 
       - name: Install hyperfine
-        uses: taiki-e/install-action@28a9d316db64b78a951f3f8587a5d08cc97ad8eb # v2.65.6
+        uses: taiki-e/install-action@cc33365ec7e3350bc47bf935f247582cc6f68344 # v2.65.12
         with:
           tool: hyperfine
 
