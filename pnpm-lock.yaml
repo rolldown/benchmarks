@@ -76,8 +76,8 @@ importers:
         specifier: 5.3.16
         version: 5.3.16(@swc/core@1.15.8(@swc/helpers@0.5.18))(esbuild@0.27.2)(webpack@5.102.1(@swc/core@1.15.8(@swc/helpers@0.5.18))(esbuild@0.27.2))
       vite:
-        specifier: npm:rolldown-vite@7.3.0
-        version: rolldown-vite@7.3.0(@types/node@24.7.2)(esbuild@0.27.2)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1)
+        specifier: npm:rolldown-vite@7.3.1
+        version: rolldown-vite@7.3.1(@types/node@24.7.2)(esbuild@0.27.2)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1)
 
   apps/1000: {}
 
@@ -1869,8 +1869,8 @@ packages:
     resolution: {integrity: sha512-XQBQ3I8W1Cge0Seh+6gjj03LbmRFWuoszgK9ooCpwYIrhhoO80pfq4cUkU5DkknwfOfFteRwlZ56PYOGYyFWdg==}
     engines: {node: '>= 4'}
 
-  rolldown-vite@7.3.0:
-    resolution: {integrity: sha512-5hI5NCJwKBGtzWtdKB3c2fOEpI77Iaa0z4mSzZPU1cJ/OqrGbFafm90edVCd7T9Snz+Sh09TMAv4EQqyVLzuEg==}
+  rolldown-vite@7.3.1:
+    resolution: {integrity: sha512-LYzdNAjRHhF2yA4JUQm/QyARyi216N2rpJ0lJZb8E9FU2y5v6Vk+xq/U4XBOxMefpWixT5H3TslmAHm1rqIq2w==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3820,7 +3820,7 @@ snapshots:
 
   retry@0.13.1: {}
 
-  rolldown-vite@7.3.0(@types/node@24.7.2)(esbuild@0.27.2)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1):
+  rolldown-vite@7.3.1(@types/node@24.7.2)(esbuild@0.27.2)(jiti@2.6.1)(terser@5.44.0)(yaml@2.8.1):
     dependencies:
       '@oxc-project/runtime': 0.101.0
       fdir: 6.5.0(picomatch@4.0.3)
