@@ -20,7 +20,7 @@
 		"@rollup/plugin-terser": "0.4.4",
 		"@rollup/plugin-typescript": "12.3.0",
 		"@rsbuild/core": "1.7.2",
-		"@rsbuild/plugin-react": "1.4.2",
+		"@rsbuild/plugin-react": "1.4.3",
 		"@rspack/cli": "1.7.2",
 		"@rspack/core": "1.7.2",
 		"@swc/core": "1.15.8",
