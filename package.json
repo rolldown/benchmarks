@@ -23,7 +23,7 @@
 		"@rsbuild/plugin-react": "1.4.3",
 		"@rspack/cli": "1.7.2",
 		"@rspack/core": "1.7.2",
-		"@swc/core": "1.15.8",
+		"@swc/core": "1.15.10",
 		"esbuild": "0.27.2",
 		"glob": "13.0.0",
 		"rolldown": "1.0.0-beta.60",
