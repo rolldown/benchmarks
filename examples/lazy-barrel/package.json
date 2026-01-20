@@ -1,0 +1,10 @@
+{
+  "name": "lazy-barrel-benchmark",
+  "version": "1.0.0",
+  "scripts": {
+    "build:rolldown": "rolldown -c rolldown.config.mjs"
+  },
+  "dependencies": {
+    "antd": "^6.2.0"
+  }
+}
