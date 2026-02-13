@@ -86,7 +86,7 @@ const toolDisplayNames = {
 const tempJsonFile = '.bench-temp.json';
 
 // Build hyperfine command with proper quoting
-let cmd = `${hyperfineBin} --export-json ${escapeShellArg(tempJsonFile)}`;
+let cmd = `${hyperfineBin} --warmup 1 --runs 3 --export-json ${escapeShellArg(tempJsonFile)}`;
 for (const tool of tools) {
   const displayName = toolDisplayNames[tool] || tool;
   cmd += ` -n ${escapeShellArg(displayName)} ${escapeShellArg(`node --run build:${tool}`)}`;
