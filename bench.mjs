@@ -76,7 +76,7 @@ function escapeShellArg(arg) {
 // Run benchmark for all tools
 const tools = ['vite', 'rsbuild', 'rspack', 'rolldown', 'esbuild', 'bun'];
 const toolDisplayNames = {
-  'vite': 'rolldown-vite',
+  'vite': 'vite',
   'rsbuild': 'rsbuild',
   'rspack': 'rspack',
   'rolldown': 'rolldown',
