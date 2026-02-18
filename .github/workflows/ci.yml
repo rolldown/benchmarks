@@ -26,6 +26,24 @@ jobs:
     steps:
       - uses: taiki-e/checkout-action@3ab630d442e198ebb0ca30872832406ca01c46eb # v1.4.0
 
+      - name: Collect system information
+        uses: kenchan0130/actions-system-info@59699597e84e80085a750998045983daa49274c4 # v1.4.0
+        id: system-info
+
+      - name: Print system information
+        run: |
+          echo "::group::System Information"
+          echo "CPU Core: ${{ steps.system-info.outputs.cpu-core }}"
+          echo "CPU Model: ${{ steps.system-info.outputs.cpu-model }}"
+          echo "Hostname: ${{ steps.system-info.outputs.hostname }}"
+          echo "Kernel Release: ${{ steps.system-info.outputs.kernel-release }}"
+          echo "Kernel Version: ${{ steps.system-info.outputs.kernel-version }}"
+          echo "OS Name: ${{ steps.system-info.outputs.name }}"
+          echo "Platform: ${{ steps.system-info.outputs.platform }}"
+          echo "OS Release: ${{ steps.system-info.outputs.release }}"
+          echo "Total Memory: ${{ steps.system-info.outputs.totalmem }}"
+          echo "::endgroup::"
+
       - uses: oxc-project/setup-node@8958a8e040102244b619c4a94fccb657a44b1c21 # v1.0.6
 
       - uses: oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3 # v2.1.2
