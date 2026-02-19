@@ -25,12 +25,12 @@
 		"@rspack/core": "1.7.6",
 		"@swc/core": "1.15.11",
 		"esbuild": "0.27.3",
-		"glob": "13.0.5",
+		"glob": "13.0.6",
 		"rolldown": "1.0.0-rc.5",
 		"rollup": "4.57.1",
 		"rollup-plugin-esbuild": "6.2.1",
 		"rollup-plugin-swc3": "0.12.1",
 		"terser-webpack-plugin": "5.3.16",
-		"vite": "8.0.0-beta.14"
+		"vite": "8.0.0-beta.15"
 	}
 }
