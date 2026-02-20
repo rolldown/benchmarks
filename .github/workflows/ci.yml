@@ -123,5 +123,8 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7.1.0
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         with:
-          commit_message: 'chore: update benchmark results in README [skip ci]\n\nWorkflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+          commit_message: |-
+            chore: update benchmark results in README [skip ci]
+
+            Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           file_pattern: README.md
