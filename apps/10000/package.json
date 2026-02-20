@@ -9,7 +9,7 @@
     "build:rolldown": "rolldown build --config rolldown.config.mjs",
     "build:rspack": "rspack build --config rspack.config.mjs",
     "build:rollup": "rollup --config rollup.config.mjs",
-    "build:esbuild": "esbuild ./src/index.jsx --bundle --outdir=dist-esbuild --minify --sourcemap",
+    "build:esbuild": "esbuild ./src/index.jsx --bundle --outdir=dist-esbuild --minify --sourcemap --legal-comments=none",
     "build:bun": "bun build --outdir=dist-bun --production --sourcemap ./src/index.jsx "
   },
   "keywords": [],
