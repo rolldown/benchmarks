@@ -4,6 +4,7 @@ export default defineConfig({
   input: {
     main: "./src/index.jsx",
   },
+  external: [/\.css$/],
   transform: {
     define: {
       "process.env.NODE_ENV": JSON.stringify("production"),
