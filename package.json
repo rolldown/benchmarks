@@ -27,7 +27,7 @@
 		"esbuild": "0.27.4",
 		"glob": "13.0.6",
 		"rolldown": "1.0.0-rc.10",
-		"rollup": "4.59.0",
+		"rollup": "4.59.1",
 		"rollup-plugin-esbuild": "6.2.1",
 		"rollup-plugin-swc3": "0.12.1",
 		"terser-webpack-plugin": "5.4.0",
