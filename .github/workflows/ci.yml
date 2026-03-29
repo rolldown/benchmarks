@@ -44,12 +44,12 @@ jobs:
           echo "Total Memory: ${{ steps.system-info.outputs.totalmem }}"
           echo "::endgroup::"
 
-      - uses: oxc-project/setup-node@b8d296d30eafd1ae2968fab67aead472a1dbf6d4 # v1.0.7
+      - uses: oxc-project/setup-node@4c26e7cb3605b6bdef5450dacd02c434b10fd8ba # v1.2.0
 
       - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
 
       - name: Install hyperfine
-        uses: taiki-e/install-action@06203676c62f0d3c765be3f2fcfbebbcb02d09f5 # v2.69.6
+        uses: taiki-e/install-action@fd0f63e180a477d7434580b6d80817978b9ff2b8 # v2.70.1
         with:
           tool: hyperfine
 
@@ -115,7 +115,7 @@ jobs:
         with:
           path: ./results
 
-      - uses: oxc-project/setup-node@b8d296d30eafd1ae2968fab67aead472a1dbf6d4 # v1.0.7
+      - uses: oxc-project/setup-node@4c26e7cb3605b6bdef5450dacd02c434b10fd8ba # v1.2.0
 
       - name: Update README
         run: node scripts/update-readme.mjs
