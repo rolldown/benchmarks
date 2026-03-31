@@ -4,9 +4,7 @@ import { pluginReact } from "@rsbuild/plugin-react";
 export default defineConfig({
 	plugins: [pluginReact()],
   mode: 'production',
-  dev: {
-    progressBar: false
-  },
+  splitChunks: false,
   output: {
     distPath: 'dist-rsbuild',
     sourceMap: true
