@@ -40,11 +40,11 @@ importers:
         specifier: 12.3.0
         version: 12.3.0(rollup@4.60.1)(tslib@2.8.1)(typescript@6.0.2)
       '@rsbuild/core':
-        specifier: 2.0.0-rc.1
-        version: 2.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
+        specifier: 2.0.0-rc.2
+        version: 2.0.0-rc.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
       '@rsbuild/plugin-react':
         specifier: 1.4.6
-        version: 1.4.6(@rsbuild/core@2.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2))
+        version: 1.4.6(@rsbuild/core@2.0.0-rc.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2))
       '@rspack/cli':
         specifier: 2.0.0-rc.1
         version: 2.0.0-rc.1(@rspack/core@2.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/helpers@0.5.21))
@@ -934,8 +934,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rsbuild/core@2.0.0-rc.1':
-    resolution: {integrity: sha512-eqxtRlQiFSm/ibCNGiPj8ozsGSNK91NY+GksmPuTCPmWQExGtPqM1V+s13UYeWZS6fYbMRs7NlQKD896e0QkKA==}
+  '@rsbuild/core@2.0.0-rc.2':
+    resolution: {integrity: sha512-pZaJ8FBltCgOZEFMIixVY08GfbQ5qGyZvMX5pXyM05SQ6L0wzAoqytSAAU5oxMrcfNW6BmyRMqtq9OqG3vksAA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2510,7 +2510,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.60.1':
     optional: true
 
-  '@rsbuild/core@2.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)':
+  '@rsbuild/core@2.0.0-rc.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)':
     dependencies:
       '@rspack/core': 2.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/helpers@0.5.21)
       '@swc/helpers': 0.5.21
@@ -2519,12 +2519,12 @@ snapshots:
       - '@emnapi/runtime'
       - '@module-federation/runtime-tools'
 
-  '@rsbuild/plugin-react@1.4.6(@rsbuild/core@2.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2))':
+  '@rsbuild/plugin-react@1.4.6(@rsbuild/core@2.0.0-rc.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2))':
     dependencies:
       '@rspack/plugin-react-refresh': 1.6.1(react-refresh@0.18.0)
       react-refresh: 0.18.0
     optionalDependencies:
-      '@rsbuild/core': 2.0.0-rc.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
+      '@rsbuild/core': 2.0.0-rc.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
     transitivePeerDependencies:
       - webpack-hot-middleware
 
