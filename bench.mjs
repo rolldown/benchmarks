@@ -74,11 +74,12 @@ function escapeShellArg(arg) {
 }
 
 // Run benchmark for all tools
-const tools = ['vite', 'rsbuild', 'rspack', 'rolldown', 'esbuild', 'bun'];
+const tools = ['vite', 'rsbuild', 'rspack', 'rollup', 'rolldown', 'esbuild', 'bun'];
 const toolDisplayNames = {
   'vite': 'vite',
   'rsbuild': 'rsbuild',
   'rspack': 'rspack',
+  'rollup': 'rollup',
   'rolldown': 'rolldown',
   'esbuild': 'esbuild',
   'bun': 'bun'
@@ -177,6 +178,7 @@ function getToolVersions() {
     'vite': 'pnpm vite --version',
     'rsbuild': 'pnpm rsbuild --version',
     'rspack': 'pnpm rspack --version',
+    'rollup': 'pnpm rollup --version',
     'rolldown': 'pnpm rolldown --version',
     'esbuild': 'pnpm esbuild --version',
     'bun': 'bun --version',
