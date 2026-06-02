@@ -37,11 +37,11 @@ importers:
         specifier: 12.3.0
         version: 12.3.0(rollup@4.60.4)(tslib@2.8.1)(typescript@6.0.2)
       '@rsbuild/core':
-        specifier: 2.0.8
-        version: 2.0.8
+        specifier: 2.0.9
+        version: 2.0.9
       '@rsbuild/plugin-react':
-        specifier: 2.0.0
-        version: 2.0.0(@rsbuild/core@2.0.8)(@rspack/core@2.0.5(@swc/helpers@0.5.23))
+        specifier: 2.0.1
+        version: 2.0.1(@rsbuild/core@2.0.9)(@rspack/core@2.0.5(@swc/helpers@0.5.23))
       '@rspack/cli':
         specifier: 2.0.5
         version: 2.0.5(@rspack/core@2.0.5(@swc/helpers@0.5.23))
@@ -1017,8 +1017,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rsbuild/core@2.0.8':
-    resolution: {integrity: sha512-V5Bhn3zqljsaB5grw9oMkSk6XZFvMkr6UpIYPZnDmOWsRAT1fNQ6XF6cn8fVUKv/KILblBrKLUZf0DpvDt3exw==}
+  '@rsbuild/core@2.0.9':
+    resolution: {integrity: sha512-lK2bMNuwh3TuLXLskS7nG3fnQk+6eaLeeZiquJWcna4JZx9iaI59JSd+iLcg5TeZLjEVygkwn/HcE+yuYDQRAw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1027,8 +1027,8 @@ packages:
       core-js:
         optional: true
 
-  '@rsbuild/plugin-react@2.0.0':
-    resolution: {integrity: sha512-/1gzt39EGUSFEqB83g46QoOwsgv172HI18i6au1b6lgIaX4sv9stuX4ijdHbHCp8PqYEq+MyQ99jIQMO6I+etg==}
+  '@rsbuild/plugin-react@2.0.1':
+    resolution: {integrity: sha512-n5m3VxEm6m3Dv1VkI0WnxsildySJ6M+QjGIzkZDy5UebRCIJ1Q/hlQVyhofBL6C+AcsF9fGjlHQkeiteXJSr3Q==}
     peerDependencies:
       '@rsbuild/core': ^2.0.0-0
     peerDependenciesMeta:
@@ -2651,19 +2651,19 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.60.4':
     optional: true
 
-  '@rsbuild/core@2.0.8':
+  '@rsbuild/core@2.0.9':
     dependencies:
       '@rspack/core': 2.0.5(@swc/helpers@0.5.23)
       '@swc/helpers': 0.5.23
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
 
-  '@rsbuild/plugin-react@2.0.0(@rsbuild/core@2.0.8)(@rspack/core@2.0.5(@swc/helpers@0.5.23))':
+  '@rsbuild/plugin-react@2.0.1(@rsbuild/core@2.0.9)(@rspack/core@2.0.5(@swc/helpers@0.5.23))':
     dependencies:
       '@rspack/plugin-react-refresh': 2.0.0(@rspack/core@2.0.5(@swc/helpers@0.5.23))(react-refresh@0.18.0)
       react-refresh: 0.18.0
     optionalDependencies:
-      '@rsbuild/core': 2.0.8
+      '@rsbuild/core': 2.0.9
     transitivePeerDependencies:
       - '@rspack/core'
 
