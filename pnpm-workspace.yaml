@@ -4,3 +4,8 @@ packages:
 
 onlyBuiltDependencies:
   - bun
+
+# Always benchmark the latest rolldown; exempt it from the minimumReleaseAge policy.
+minimumReleaseAgeExclude:
+  - rolldown
+  - '@rolldown/*'
