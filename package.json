@@ -9,8 +9,8 @@
 	"dependencies": {
 		"@iconify-icons/material-symbols": "1.2.58",
 		"@iconify/react": "6.0.2",
-		"react": "19.2.6",
-		"react-dom": "19.2.6"
+		"react": "19.2.7",
+		"react-dom": "19.2.7"
 	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "29.0.3",
