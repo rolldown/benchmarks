@@ -23,7 +23,7 @@
 		"@rspack/cli": "2.0.6",
 		"@rspack/core": "2.0.6",
 		"@swc/core": "1.15.40",
-		"esbuild": "0.28.0",
+		"esbuild": "0.28.1",
 		"glob": "13.0.6",
 		"rolldown": "1.1.0",
 		"rollup": "4.61.1",
