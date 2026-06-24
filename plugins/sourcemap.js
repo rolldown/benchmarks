@@ -101,7 +101,7 @@ onClick={() => {
 export const oxcNative = {
 	name: "oxc+nativeMagicString",
 	transform(code, id, meta) {
-		if (id.endsWith(".jsx")) return null;
+		if (!id.endsWith(".jsx")) return null;
 
 		let { magicString: ms, ast } = meta;
 
