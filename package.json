@@ -22,7 +22,7 @@
 		"@rsbuild/plugin-react": "2.1.0",
 		"@rspack/cli": "2.1.4",
 		"@rspack/core": "2.1.4",
-		"@swc/core": "1.15.43",
+		"@swc/core": "1.15.46",
 		"esbuild": "0.28.1",
 		"glob": "13.0.6",
 		"rolldown": "1.2.0",
