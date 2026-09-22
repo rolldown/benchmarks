@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/respiratory-rate-sharp.js'
+  import I from '@iconify-icons/material-symbols/respiratory-rate-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

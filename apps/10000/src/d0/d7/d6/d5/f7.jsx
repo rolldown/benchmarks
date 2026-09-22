@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/ulna-radius.js'
+  import I from '@iconify-icons/material-symbols/ulna-radius'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

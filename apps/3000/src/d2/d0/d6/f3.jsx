@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/sheets-rtl-rounded.js'
+  import I from '@iconify-icons/material-symbols/sheets-rtl-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

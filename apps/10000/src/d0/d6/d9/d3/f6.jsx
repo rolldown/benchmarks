@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/chromecast-device.js'
+  import I from '@iconify-icons/material-symbols/chromecast-device'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

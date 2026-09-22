@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/work-alert.js'
+  import I from '@iconify-icons/material-symbols/work-alert'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

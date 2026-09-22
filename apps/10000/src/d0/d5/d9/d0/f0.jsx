@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/pentagon-rounded.js'
+  import I from '@iconify-icons/material-symbols/pentagon-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

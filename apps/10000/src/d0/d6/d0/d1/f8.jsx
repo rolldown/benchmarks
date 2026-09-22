@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/emoji-food-beverage-outline.js'
+  import I from '@iconify-icons/material-symbols/emoji-food-beverage-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/app-registration-outline-sharp.js'
+  import I from '@iconify-icons/material-symbols/app-registration-outline-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

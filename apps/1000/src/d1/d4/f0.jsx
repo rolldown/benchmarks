@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/deployed-code-outline-sharp.js'
+  import I from '@iconify-icons/material-symbols/deployed-code-outline-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   import C0 from './d0/f0.jsx'
 import C1 from './d0/f1.jsx'

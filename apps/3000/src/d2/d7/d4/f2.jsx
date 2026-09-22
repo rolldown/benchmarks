@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/60fps.js'
+  import I from '@iconify-icons/material-symbols/60fps'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

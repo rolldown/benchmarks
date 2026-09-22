@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/decimal-increase.js'
+  import I from '@iconify-icons/material-symbols/decimal-increase'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/calendar-add-on.js'
+  import I from '@iconify-icons/material-symbols/calendar-add-on'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

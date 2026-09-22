@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/hot-tub.js'
+  import I from '@iconify-icons/material-symbols/hot-tub'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

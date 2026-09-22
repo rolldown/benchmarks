@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/lock-open-outline.js'
+  import I from '@iconify-icons/material-symbols/lock-open-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

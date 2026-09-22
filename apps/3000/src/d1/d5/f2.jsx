@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/videocam-off-outline-sharp.js'
+  import I from '@iconify-icons/material-symbols/videocam-off-outline-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   import C0 from './d2/f0.jsx'
 import C1 from './d2/f1.jsx'

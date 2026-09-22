@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/join-left.js'
+  import I from '@iconify-icons/material-symbols/join-left'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

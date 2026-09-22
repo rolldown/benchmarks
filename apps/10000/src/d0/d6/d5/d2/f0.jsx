@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/medical-mask-outline.js'
+  import I from '@iconify-icons/material-symbols/medical-mask-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

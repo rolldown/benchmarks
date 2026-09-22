@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/text-rotation-angledown-rounded.js'
+  import I from '@iconify-icons/material-symbols/text-rotation-angledown-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

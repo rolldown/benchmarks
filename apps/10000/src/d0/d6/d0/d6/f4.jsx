@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/rheumatology.js'
+  import I from '@iconify-icons/material-symbols/rheumatology'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

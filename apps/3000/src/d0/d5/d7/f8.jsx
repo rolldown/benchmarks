@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/rounded-corner.js'
+  import I from '@iconify-icons/material-symbols/rounded-corner'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

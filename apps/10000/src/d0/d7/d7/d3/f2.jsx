@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/military-tech.js'
+  import I from '@iconify-icons/material-symbols/military-tech'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

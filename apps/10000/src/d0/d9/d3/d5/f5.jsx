@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/flight-class.js'
+  import I from '@iconify-icons/material-symbols/flight-class'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/airline-seat-individual-suite.js'
+  import I from '@iconify-icons/material-symbols/airline-seat-individual-suite'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

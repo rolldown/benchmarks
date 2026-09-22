@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/playlist-add-check-sharp.js'
+  import I from '@iconify-icons/material-symbols/playlist-add-check-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

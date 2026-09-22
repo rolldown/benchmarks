@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/stethoscope-check-rounded.js'
+  import I from '@iconify-icons/material-symbols/stethoscope-check-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

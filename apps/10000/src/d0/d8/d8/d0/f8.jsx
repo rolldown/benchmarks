@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/zone-person-alert-sharp.js'
+  import I from '@iconify-icons/material-symbols/zone-person-alert-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/checked-bag-question.js'
+  import I from '@iconify-icons/material-symbols/checked-bag-question'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

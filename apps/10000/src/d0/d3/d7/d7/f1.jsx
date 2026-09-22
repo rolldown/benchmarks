@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/battery-status-good-sharp.js'
+  import I from '@iconify-icons/material-symbols/battery-status-good-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

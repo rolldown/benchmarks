@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/forklift.js'
+  import I from '@iconify-icons/material-symbols/forklift'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/monochrome-photos.js'
+  import I from '@iconify-icons/material-symbols/monochrome-photos'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

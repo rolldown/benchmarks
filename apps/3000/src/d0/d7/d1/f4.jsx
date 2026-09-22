@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/rotate-90-degrees-ccw.js'
+  import I from '@iconify-icons/material-symbols/rotate-90-degrees-ccw'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/bike-scooter-sharp.js'
+  import I from '@iconify-icons/material-symbols/bike-scooter-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

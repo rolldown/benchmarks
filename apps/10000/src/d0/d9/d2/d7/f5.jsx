@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/straighten.js'
+  import I from '@iconify-icons/material-symbols/straighten'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

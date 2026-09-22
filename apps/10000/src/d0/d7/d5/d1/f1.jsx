@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/gfit-health.js'
+  import I from '@iconify-icons/material-symbols/gfit-health'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

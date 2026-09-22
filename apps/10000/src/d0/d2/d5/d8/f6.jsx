@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/watch-button-press.js'
+  import I from '@iconify-icons/material-symbols/watch-button-press'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

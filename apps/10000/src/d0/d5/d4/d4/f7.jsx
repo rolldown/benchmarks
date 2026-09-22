@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/person-pin.js'
+  import I from '@iconify-icons/material-symbols/person-pin'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

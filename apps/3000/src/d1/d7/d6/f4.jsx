@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/contact-mail.js'
+  import I from '@iconify-icons/material-symbols/contact-mail'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

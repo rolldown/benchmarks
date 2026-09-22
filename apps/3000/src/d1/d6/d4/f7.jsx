@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/select-window-off-sharp.js'
+  import I from '@iconify-icons/material-symbols/select-window-off-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

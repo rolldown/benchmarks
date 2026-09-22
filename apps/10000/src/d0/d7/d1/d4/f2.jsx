@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/developer-mode-tv-outline.js'
+  import I from '@iconify-icons/material-symbols/developer-mode-tv-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

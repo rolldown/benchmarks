@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/trail-length-medium.js'
+  import I from '@iconify-icons/material-symbols/trail-length-medium'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

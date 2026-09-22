@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/garden-cart.js'
+  import I from '@iconify-icons/material-symbols/garden-cart'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

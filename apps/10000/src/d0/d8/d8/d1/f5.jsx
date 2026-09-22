@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/highlight-outline.js'
+  import I from '@iconify-icons/material-symbols/highlight-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

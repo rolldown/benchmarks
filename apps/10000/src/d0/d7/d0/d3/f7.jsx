@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/google-travel-outline.js'
+  import I from '@iconify-icons/material-symbols/google-travel-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

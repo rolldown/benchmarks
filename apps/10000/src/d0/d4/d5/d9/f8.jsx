@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/collapse-all.js'
+  import I from '@iconify-icons/material-symbols/collapse-all'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

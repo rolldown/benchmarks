@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/rotate-left-rounded.js'
+  import I from '@iconify-icons/material-symbols/rotate-left-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/precision-manufacturing-rounded.js'
+  import I from '@iconify-icons/material-symbols/precision-manufacturing-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

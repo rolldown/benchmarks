@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/ev-charger-sharp.js'
+  import I from '@iconify-icons/material-symbols/ev-charger-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

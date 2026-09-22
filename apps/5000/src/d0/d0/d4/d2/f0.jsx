@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/breakfast-dining.js'
+  import I from '@iconify-icons/material-symbols/breakfast-dining'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

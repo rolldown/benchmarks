@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/piano-off.js'
+  import I from '@iconify-icons/material-symbols/piano-off'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

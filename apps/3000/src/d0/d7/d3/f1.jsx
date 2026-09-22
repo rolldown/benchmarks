@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/text-rotate-up.js'
+  import I from '@iconify-icons/material-symbols/text-rotate-up'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

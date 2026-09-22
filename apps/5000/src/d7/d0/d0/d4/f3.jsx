@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/tools-power-drill.js'
+  import I from '@iconify-icons/material-symbols/tools-power-drill'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

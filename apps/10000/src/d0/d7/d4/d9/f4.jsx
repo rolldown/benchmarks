@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/language-chinese-pinyin.js'
+  import I from '@iconify-icons/material-symbols/language-chinese-pinyin'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

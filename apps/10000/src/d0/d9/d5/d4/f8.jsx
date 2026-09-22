@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/3d-rotation-sharp.js'
+  import I from '@iconify-icons/material-symbols/3d-rotation-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

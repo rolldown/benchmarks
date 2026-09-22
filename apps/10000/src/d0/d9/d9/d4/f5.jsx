@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/golf-course-sharp.js'
+  import I from '@iconify-icons/material-symbols/golf-course-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

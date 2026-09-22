@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/planner-banner-ad-pt-sharp.js'
+  import I from '@iconify-icons/material-symbols/planner-banner-ad-pt-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

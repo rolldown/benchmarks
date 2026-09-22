@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/bloodtype-outline.js'
+  import I from '@iconify-icons/material-symbols/bloodtype-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

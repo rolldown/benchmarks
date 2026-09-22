@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/fiber-manual-record-sharp.js'
+  import I from '@iconify-icons/material-symbols/fiber-manual-record-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

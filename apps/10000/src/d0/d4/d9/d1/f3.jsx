@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/cable-rounded.js'
+  import I from '@iconify-icons/material-symbols/cable-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

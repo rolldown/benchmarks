@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/outbox-outline.js'
+  import I from '@iconify-icons/material-symbols/outbox-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

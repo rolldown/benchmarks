@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/pin-drop-outline.js'
+  import I from '@iconify-icons/material-symbols/pin-drop-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

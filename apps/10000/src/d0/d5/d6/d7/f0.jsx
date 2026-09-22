@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/mark-unread-chat-alt-outline.js'
+  import I from '@iconify-icons/material-symbols/mark-unread-chat-alt-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

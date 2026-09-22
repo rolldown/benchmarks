@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/7k-plus-rounded.js'
+  import I from '@iconify-icons/material-symbols/7k-plus-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

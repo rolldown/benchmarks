@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/familiar-face-and-zone-sharp.js'
+  import I from '@iconify-icons/material-symbols/familiar-face-and-zone-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

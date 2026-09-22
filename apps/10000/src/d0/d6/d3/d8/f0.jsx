@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/hard-drive-outline.js'
+  import I from '@iconify-icons/material-symbols/hard-drive-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

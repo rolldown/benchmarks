@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/layers-clear.js'
+  import I from '@iconify-icons/material-symbols/layers-clear'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

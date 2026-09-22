@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/beach-access-outline-sharp.js'
+  import I from '@iconify-icons/material-symbols/beach-access-outline-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

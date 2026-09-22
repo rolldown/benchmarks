@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/keyboard-command-key-sharp.js'
+  import I from '@iconify-icons/material-symbols/keyboard-command-key-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

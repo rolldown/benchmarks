@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/line-start-arrow.js'
+  import I from '@iconify-icons/material-symbols/line-start-arrow'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

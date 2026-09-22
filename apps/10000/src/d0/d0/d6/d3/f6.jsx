@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/rear-camera-outline-rounded.js'
+  import I from '@iconify-icons/material-symbols/rear-camera-outline-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

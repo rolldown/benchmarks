@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/satellite.js'
+  import I from '@iconify-icons/material-symbols/satellite'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

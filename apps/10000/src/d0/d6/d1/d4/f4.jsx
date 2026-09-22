@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/climate-mini-split.js'
+  import I from '@iconify-icons/material-symbols/climate-mini-split'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

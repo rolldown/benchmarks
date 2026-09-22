@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/3g-mobiledata.js'
+  import I from '@iconify-icons/material-symbols/3g-mobiledata'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

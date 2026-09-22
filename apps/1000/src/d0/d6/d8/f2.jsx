@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/filter-9-plus.js'
+  import I from '@iconify-icons/material-symbols/filter-9-plus'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

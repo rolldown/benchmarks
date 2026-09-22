@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/counter-9.js'
+  import I from '@iconify-icons/material-symbols/counter-9'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

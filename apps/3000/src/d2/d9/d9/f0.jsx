@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/connected-tv.js'
+  import I from '@iconify-icons/material-symbols/connected-tv'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/swipe-right-alt.js'
+  import I from '@iconify-icons/material-symbols/swipe-right-alt'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

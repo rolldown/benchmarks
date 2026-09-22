@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/browse-gallery-outline.js'
+  import I from '@iconify-icons/material-symbols/browse-gallery-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

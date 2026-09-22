@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/autopause.js'
+  import I from '@iconify-icons/material-symbols/autopause'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

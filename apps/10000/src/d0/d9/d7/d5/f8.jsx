@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/shopping-bag.js'
+  import I from '@iconify-icons/material-symbols/shopping-bag'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

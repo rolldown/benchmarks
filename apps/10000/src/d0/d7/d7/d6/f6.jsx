@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/body-fat.js'
+  import I from '@iconify-icons/material-symbols/body-fat'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

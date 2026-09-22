@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/format-align-justify-sharp.js'
+  import I from '@iconify-icons/material-symbols/format-align-justify-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

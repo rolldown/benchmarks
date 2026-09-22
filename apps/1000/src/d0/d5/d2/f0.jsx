@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/pinch-zoom-in-sharp.js'
+  import I from '@iconify-icons/material-symbols/pinch-zoom-in-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

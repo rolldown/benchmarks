@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/shield-locked-rounded.js'
+  import I from '@iconify-icons/material-symbols/shield-locked-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

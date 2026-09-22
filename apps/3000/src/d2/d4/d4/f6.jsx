@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/water-heater-outline.js'
+  import I from '@iconify-icons/material-symbols/water-heater-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

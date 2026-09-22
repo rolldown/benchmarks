@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/podium.js'
+  import I from '@iconify-icons/material-symbols/podium'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

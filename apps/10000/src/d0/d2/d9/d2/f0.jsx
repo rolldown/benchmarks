@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nest-heat-link-gen-3-sharp.js'
+  import I from '@iconify-icons/material-symbols/nest-heat-link-gen-3-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

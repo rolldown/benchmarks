@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/orders-outline.js'
+  import I from '@iconify-icons/material-symbols/orders-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

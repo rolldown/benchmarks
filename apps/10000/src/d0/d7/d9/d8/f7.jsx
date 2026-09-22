@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/android-contacts.js'
+  import I from '@iconify-icons/material-symbols/android-contacts'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

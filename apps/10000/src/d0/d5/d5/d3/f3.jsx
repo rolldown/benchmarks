@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nature-people-rounded.js'
+  import I from '@iconify-icons/material-symbols/nature-people-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

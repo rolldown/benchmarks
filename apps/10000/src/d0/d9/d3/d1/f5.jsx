@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/tv-signin-outline.js'
+  import I from '@iconify-icons/material-symbols/tv-signin-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

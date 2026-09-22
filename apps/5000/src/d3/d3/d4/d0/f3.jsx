@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/mixture-med.js'
+  import I from '@iconify-icons/material-symbols/mixture-med'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

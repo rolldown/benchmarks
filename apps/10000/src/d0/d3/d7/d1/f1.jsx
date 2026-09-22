@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/filter-hdr.js'
+  import I from '@iconify-icons/material-symbols/filter-hdr'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

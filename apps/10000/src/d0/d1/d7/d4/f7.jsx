@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/airline-seat-flat-outline-sharp.js'
+  import I from '@iconify-icons/material-symbols/airline-seat-flat-outline-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

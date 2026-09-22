@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/app-badging.js'
+  import I from '@iconify-icons/material-symbols/app-badging'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

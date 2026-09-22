@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/taxi-alert.js'
+  import I from '@iconify-icons/material-symbols/taxi-alert'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

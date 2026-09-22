@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/call-to-action-outline-rounded.js'
+  import I from '@iconify-icons/material-symbols/call-to-action-outline-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/5g-mobiledata-badge.js'
+  import I from '@iconify-icons/material-symbols/5g-mobiledata-badge'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

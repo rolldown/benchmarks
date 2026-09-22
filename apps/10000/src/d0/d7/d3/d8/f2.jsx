@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/total-dissolved-solids.js'
+  import I from '@iconify-icons/material-symbols/total-dissolved-solids'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

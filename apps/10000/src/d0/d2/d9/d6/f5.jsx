@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/volume-down-alt.js'
+  import I from '@iconify-icons/material-symbols/volume-down-alt'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

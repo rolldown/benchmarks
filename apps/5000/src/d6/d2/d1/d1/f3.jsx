@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/google-home-devices.js'
+  import I from '@iconify-icons/material-symbols/google-home-devices'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

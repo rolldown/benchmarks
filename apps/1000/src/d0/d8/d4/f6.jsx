@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/signal-cellular-alt-2-bar.js'
+  import I from '@iconify-icons/material-symbols/signal-cellular-alt-2-bar'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

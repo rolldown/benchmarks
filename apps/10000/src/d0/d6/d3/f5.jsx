@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/add-ad-outline-rounded.js'
+  import I from '@iconify-icons/material-symbols/add-ad-outline-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   import C0 from './d5/f0.jsx'
 import C1 from './d5/f1.jsx'

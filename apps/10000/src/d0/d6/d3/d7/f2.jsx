@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/vpn-key-alert-sharp.js'
+  import I from '@iconify-icons/material-symbols/vpn-key-alert-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

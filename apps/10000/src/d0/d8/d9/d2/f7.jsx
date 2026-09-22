@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/dynamic-form.js'
+  import I from '@iconify-icons/material-symbols/dynamic-form'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

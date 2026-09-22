@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/chrome-maximize-sharp.js'
+  import I from '@iconify-icons/material-symbols/chrome-maximize-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/do-not-disturb-off-outline.js'
+  import I from '@iconify-icons/material-symbols/do-not-disturb-off-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

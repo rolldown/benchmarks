@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/chat-bubble-outline.js'
+  import I from '@iconify-icons/material-symbols/chat-bubble-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

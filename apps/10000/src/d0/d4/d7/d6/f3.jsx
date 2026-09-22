@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/mic-noise-cancel-high.js'
+  import I from '@iconify-icons/material-symbols/mic-noise-cancel-high'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

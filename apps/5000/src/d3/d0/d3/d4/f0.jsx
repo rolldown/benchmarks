@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/holiday-village-sharp.js'
+  import I from '@iconify-icons/material-symbols/holiday-village-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

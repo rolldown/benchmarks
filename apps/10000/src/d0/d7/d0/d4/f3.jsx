@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/transfer-within-a-station.js'
+  import I from '@iconify-icons/material-symbols/transfer-within-a-station'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

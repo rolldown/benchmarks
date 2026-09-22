@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nfc.js'
+  import I from '@iconify-icons/material-symbols/nfc'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

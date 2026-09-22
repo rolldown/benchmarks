@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/person-3.js'
+  import I from '@iconify-icons/material-symbols/person-3'
   import { Icon } from '@iconify/react/dist/offline';
   import C0 from './d7/f0.jsx'
 import C1 from './d7/f1.jsx'

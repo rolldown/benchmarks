@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/reset-wrench.js'
+  import I from '@iconify-icons/material-symbols/reset-wrench'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

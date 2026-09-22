@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nest-found-savings.js'
+  import I from '@iconify-icons/material-symbols/nest-found-savings'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

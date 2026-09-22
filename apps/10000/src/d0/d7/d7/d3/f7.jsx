@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/heap-snapshot-large.js'
+  import I from '@iconify-icons/material-symbols/heap-snapshot-large'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

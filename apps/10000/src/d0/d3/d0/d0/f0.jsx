@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/grid-3x3.js'
+  import I from '@iconify-icons/material-symbols/grid-3x3'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/blood-pressure-sharp.js'
+  import I from '@iconify-icons/material-symbols/blood-pressure-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

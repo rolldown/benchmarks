@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/bedroom-child.js'
+  import I from '@iconify-icons/material-symbols/bedroom-child'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

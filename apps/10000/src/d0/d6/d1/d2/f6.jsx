@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/power-plug.js'
+  import I from '@iconify-icons/material-symbols/power-plug'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

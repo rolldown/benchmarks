@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/rewarded-ads.js'
+  import I from '@iconify-icons/material-symbols/rewarded-ads'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/outpatient-med-sharp.js'
+  import I from '@iconify-icons/material-symbols/outpatient-med-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

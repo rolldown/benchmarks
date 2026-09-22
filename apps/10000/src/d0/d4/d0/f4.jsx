@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/call-log.js'
+  import I from '@iconify-icons/material-symbols/call-log'
   import { Icon } from '@iconify/react/dist/offline';
   import C0 from './d4/f0.jsx'
 import C1 from './d4/f1.jsx'

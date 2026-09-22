@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/swipe-down-alt-sharp.js'
+  import I from '@iconify-icons/material-symbols/swipe-down-alt-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

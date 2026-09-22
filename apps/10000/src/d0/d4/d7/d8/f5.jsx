@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/circle-notifications.js'
+  import I from '@iconify-icons/material-symbols/circle-notifications'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {
