@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/perm-data-setting-sharp.js'
+  import I from '@iconify-icons/material-symbols/perm-data-setting-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

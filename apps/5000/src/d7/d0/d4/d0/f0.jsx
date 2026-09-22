@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/low-priority-rounded.js'
+  import I from '@iconify-icons/material-symbols/low-priority-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

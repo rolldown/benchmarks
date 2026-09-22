@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/donut-small.js'
+  import I from '@iconify-icons/material-symbols/donut-small'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

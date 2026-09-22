@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/join-inner-rounded.js'
+  import I from '@iconify-icons/material-symbols/join-inner-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

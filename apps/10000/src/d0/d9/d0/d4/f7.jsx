@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/icecream.js'
+  import I from '@iconify-icons/material-symbols/icecream'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

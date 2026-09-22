@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/alarm-outline.js'
+  import I from '@iconify-icons/material-symbols/alarm-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/leak-remove.js'
+  import I from '@iconify-icons/material-symbols/leak-remove'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

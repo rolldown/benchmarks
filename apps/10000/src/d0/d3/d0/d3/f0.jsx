@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/network-wifi-1-bar-locked.js'
+  import I from '@iconify-icons/material-symbols/network-wifi-1-bar-locked'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

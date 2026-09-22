@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/sports-baseball.js'
+  import I from '@iconify-icons/material-symbols/sports-baseball'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

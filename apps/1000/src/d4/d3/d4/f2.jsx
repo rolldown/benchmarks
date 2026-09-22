@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/house-with-shield.js'
+  import I from '@iconify-icons/material-symbols/house-with-shield'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

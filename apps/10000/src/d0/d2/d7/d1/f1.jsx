@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/social-leaderboard.js'
+  import I from '@iconify-icons/material-symbols/social-leaderboard'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/two-wheeler-sharp.js'
+  import I from '@iconify-icons/material-symbols/two-wheeler-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/vertical-shades-closed.js'
+  import I from '@iconify-icons/material-symbols/vertical-shades-closed'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/downhill-skiing.js'
+  import I from '@iconify-icons/material-symbols/downhill-skiing'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

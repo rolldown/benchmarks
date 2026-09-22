@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/playlist-play.js'
+  import I from '@iconify-icons/material-symbols/playlist-play'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

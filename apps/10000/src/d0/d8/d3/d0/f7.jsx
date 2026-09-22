@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/household-supplies-sharp.js'
+  import I from '@iconify-icons/material-symbols/household-supplies-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/switch-access-shortcut-add.js'
+  import I from '@iconify-icons/material-symbols/switch-access-shortcut-add'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/percent.js'
+  import I from '@iconify-icons/material-symbols/percent'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

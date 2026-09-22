@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/cancel-presentation.js'
+  import I from '@iconify-icons/material-symbols/cancel-presentation'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/person-add-disabled-outline-sharp.js'
+  import I from '@iconify-icons/material-symbols/person-add-disabled-outline-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

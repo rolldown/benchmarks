@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/wb-twilight.js'
+  import I from '@iconify-icons/material-symbols/wb-twilight'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

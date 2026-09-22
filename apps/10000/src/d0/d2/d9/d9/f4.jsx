@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/indeterminate-question-box.js'
+  import I from '@iconify-icons/material-symbols/indeterminate-question-box'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

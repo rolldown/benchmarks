@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/how-to-vote-outline.js'
+  import I from '@iconify-icons/material-symbols/how-to-vote-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

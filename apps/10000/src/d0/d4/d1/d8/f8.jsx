@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/landslide-rounded.js'
+  import I from '@iconify-icons/material-symbols/landslide-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

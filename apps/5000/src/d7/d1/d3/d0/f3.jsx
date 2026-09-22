@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/generating-tokens-sharp.js'
+  import I from '@iconify-icons/material-symbols/generating-tokens-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

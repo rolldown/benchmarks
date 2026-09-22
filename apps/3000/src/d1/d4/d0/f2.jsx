@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nest-thermostat-sensor-eu.js'
+  import I from '@iconify-icons/material-symbols/nest-thermostat-sensor-eu'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

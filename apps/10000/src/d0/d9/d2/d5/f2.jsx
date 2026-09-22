@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/remember-me-outline.js'
+  import I from '@iconify-icons/material-symbols/remember-me-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

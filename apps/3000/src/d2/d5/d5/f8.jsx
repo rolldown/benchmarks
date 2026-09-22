@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/congenital-sharp.js'
+  import I from '@iconify-icons/material-symbols/congenital-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

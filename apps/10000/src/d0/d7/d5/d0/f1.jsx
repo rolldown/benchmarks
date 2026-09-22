@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/pan-tool-alt.js'
+  import I from '@iconify-icons/material-symbols/pan-tool-alt'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

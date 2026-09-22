@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/gpp-bad.js'
+  import I from '@iconify-icons/material-symbols/gpp-bad'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

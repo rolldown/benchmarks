@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/heap-snapshot-thumbnail-rounded.js'
+  import I from '@iconify-icons/material-symbols/heap-snapshot-thumbnail-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

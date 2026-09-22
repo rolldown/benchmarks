@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/hvac-outline.js'
+  import I from '@iconify-icons/material-symbols/hvac-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

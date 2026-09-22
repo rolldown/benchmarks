@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/auto-fix-normal.js'
+  import I from '@iconify-icons/material-symbols/auto-fix-normal'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

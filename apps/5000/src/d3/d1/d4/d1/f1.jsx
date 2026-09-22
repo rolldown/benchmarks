@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/horizontal-split.js'
+  import I from '@iconify-icons/material-symbols/horizontal-split'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

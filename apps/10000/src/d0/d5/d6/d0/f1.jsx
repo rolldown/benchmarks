@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/move-selection-left.js'
+  import I from '@iconify-icons/material-symbols/move-selection-left'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

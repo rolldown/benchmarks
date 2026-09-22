@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/lift-to-talk.js'
+  import I from '@iconify-icons/material-symbols/lift-to-talk'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/flex-no-wrap-rounded.js'
+  import I from '@iconify-icons/material-symbols/flex-no-wrap-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   import C0 from './d2/f0.jsx'
 import C1 from './d2/f1.jsx'

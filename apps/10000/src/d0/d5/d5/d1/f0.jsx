@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/auto-awesome-mosaic-sharp.js'
+  import I from '@iconify-icons/material-symbols/auto-awesome-mosaic-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

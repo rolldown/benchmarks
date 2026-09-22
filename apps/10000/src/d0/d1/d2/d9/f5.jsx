@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/e911-emergency.js'
+  import I from '@iconify-icons/material-symbols/e911-emergency'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

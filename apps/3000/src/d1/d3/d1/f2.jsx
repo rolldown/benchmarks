@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/picture-as-pdf-outline.js'
+  import I from '@iconify-icons/material-symbols/picture-as-pdf-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

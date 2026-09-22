@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/filter-9-rounded.js'
+  import I from '@iconify-icons/material-symbols/filter-9-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

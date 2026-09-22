@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/format-ink-highlighter.js'
+  import I from '@iconify-icons/material-symbols/format-ink-highlighter'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

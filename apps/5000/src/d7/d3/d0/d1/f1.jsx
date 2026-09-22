@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/text-select-start-sharp.js'
+  import I from '@iconify-icons/material-symbols/text-select-start-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

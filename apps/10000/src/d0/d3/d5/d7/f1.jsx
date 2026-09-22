@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/mosque-outline.js'
+  import I from '@iconify-icons/material-symbols/mosque-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

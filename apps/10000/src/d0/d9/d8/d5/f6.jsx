@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/invert-colors.js'
+  import I from '@iconify-icons/material-symbols/invert-colors'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

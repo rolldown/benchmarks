@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/format-color-reset.js'
+  import I from '@iconify-icons/material-symbols/format-color-reset'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

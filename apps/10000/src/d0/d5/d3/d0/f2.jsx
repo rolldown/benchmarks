@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/ramen-dining-sharp.js'
+  import I from '@iconify-icons/material-symbols/ramen-dining-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

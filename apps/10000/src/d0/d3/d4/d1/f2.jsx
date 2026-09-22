@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/drive-file-rename-outline.js'
+  import I from '@iconify-icons/material-symbols/drive-file-rename-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

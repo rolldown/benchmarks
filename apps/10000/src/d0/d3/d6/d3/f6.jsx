@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/heap-snapshot-multiple-sharp.js'
+  import I from '@iconify-icons/material-symbols/heap-snapshot-multiple-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

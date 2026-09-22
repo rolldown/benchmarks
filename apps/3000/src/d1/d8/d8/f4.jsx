@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/smart-button.js'
+  import I from '@iconify-icons/material-symbols/smart-button'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/box-edit.js'
+  import I from '@iconify-icons/material-symbols/box-edit'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

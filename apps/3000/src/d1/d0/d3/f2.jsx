@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/wifi-password.js'
+  import I from '@iconify-icons/material-symbols/wifi-password'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

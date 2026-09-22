@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/u-turn-left-sharp.js'
+  import I from '@iconify-icons/material-symbols/u-turn-left-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

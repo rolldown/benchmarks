@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/drive-file-move.js'
+  import I from '@iconify-icons/material-symbols/drive-file-move'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

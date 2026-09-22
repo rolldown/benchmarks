@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/reduce-capacity.js'
+  import I from '@iconify-icons/material-symbols/reduce-capacity'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

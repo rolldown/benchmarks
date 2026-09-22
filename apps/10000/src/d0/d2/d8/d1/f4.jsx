@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/flag-circle-rounded.js'
+  import I from '@iconify-icons/material-symbols/flag-circle-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/lightning-stand.js'
+  import I from '@iconify-icons/material-symbols/lightning-stand'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

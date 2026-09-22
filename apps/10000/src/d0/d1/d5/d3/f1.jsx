@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/left-panel-open.js'
+  import I from '@iconify-icons/material-symbols/left-panel-open'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

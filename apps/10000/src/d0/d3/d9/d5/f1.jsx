@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/chat-error-rounded.js'
+  import I from '@iconify-icons/material-symbols/chat-error-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

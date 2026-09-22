@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/dataset-linked.js'
+  import I from '@iconify-icons/material-symbols/dataset-linked'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

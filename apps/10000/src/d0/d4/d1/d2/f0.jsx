@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/sports-esports-rounded.js'
+  import I from '@iconify-icons/material-symbols/sports-esports-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/queue-play-next.js'
+  import I from '@iconify-icons/material-symbols/queue-play-next'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

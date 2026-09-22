@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/queue-music-sharp.js'
+  import I from '@iconify-icons/material-symbols/queue-music-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

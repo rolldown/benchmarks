@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/radio-button-unchecked-sharp.js'
+  import I from '@iconify-icons/material-symbols/radio-button-unchecked-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

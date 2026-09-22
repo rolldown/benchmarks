@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/progress-activity.js'
+  import I from '@iconify-icons/material-symbols/progress-activity'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

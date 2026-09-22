@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/border-clear-sharp.js'
+  import I from '@iconify-icons/material-symbols/border-clear-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

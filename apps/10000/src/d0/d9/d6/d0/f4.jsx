@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/moving-beds.js'
+  import I from '@iconify-icons/material-symbols/moving-beds'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/weather-hail.js'
+  import I from '@iconify-icons/material-symbols/weather-hail'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

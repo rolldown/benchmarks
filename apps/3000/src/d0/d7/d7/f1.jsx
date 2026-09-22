@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nest-doorbell-visitor-outline.js'
+  import I from '@iconify-icons/material-symbols/nest-doorbell-visitor-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

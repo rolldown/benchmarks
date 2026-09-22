@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/move-item-sharp.js'
+  import I from '@iconify-icons/material-symbols/move-item-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

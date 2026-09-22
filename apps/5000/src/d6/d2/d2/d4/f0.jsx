@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/carry-on-bag-checked-rounded.js'
+  import I from '@iconify-icons/material-symbols/carry-on-bag-checked-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

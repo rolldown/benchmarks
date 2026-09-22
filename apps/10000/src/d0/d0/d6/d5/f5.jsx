@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/step-over.js'
+  import I from '@iconify-icons/material-symbols/step-over'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

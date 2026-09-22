@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/home-improvement-and-tools.js'
+  import I from '@iconify-icons/material-symbols/home-improvement-and-tools'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

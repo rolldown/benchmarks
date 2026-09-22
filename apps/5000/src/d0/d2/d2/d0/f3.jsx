@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/folder-managed-outline-rounded.js'
+  import I from '@iconify-icons/material-symbols/folder-managed-outline-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/send-time-extension.js'
+  import I from '@iconify-icons/material-symbols/send-time-extension'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

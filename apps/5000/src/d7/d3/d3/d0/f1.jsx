@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/propane-tank-sharp.js'
+  import I from '@iconify-icons/material-symbols/propane-tank-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/mark-as-unread.js'
+  import I from '@iconify-icons/material-symbols/mark-as-unread'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

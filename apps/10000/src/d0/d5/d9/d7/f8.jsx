@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/potted-plant-outline-rounded.js'
+  import I from '@iconify-icons/material-symbols/potted-plant-outline-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

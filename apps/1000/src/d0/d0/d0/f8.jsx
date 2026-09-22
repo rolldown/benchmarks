@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/quiet-time-active-outline-rounded.js'
+  import I from '@iconify-icons/material-symbols/quiet-time-active-outline-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

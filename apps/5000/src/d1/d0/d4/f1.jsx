@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/sports-and-outdoors.js'
+  import I from '@iconify-icons/material-symbols/sports-and-outdoors'
   import { Icon } from '@iconify/react/dist/offline';
   import C0 from './d1/f0.jsx'
 import C1 from './d1/f1.jsx'

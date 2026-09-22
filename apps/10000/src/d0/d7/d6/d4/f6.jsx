@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/qr-code-2-add.js'
+  import I from '@iconify-icons/material-symbols/qr-code-2-add'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

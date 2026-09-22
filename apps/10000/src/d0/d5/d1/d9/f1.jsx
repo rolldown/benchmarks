@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/find-in-page-outline-rounded.js'
+  import I from '@iconify-icons/material-symbols/find-in-page-outline-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/desktop-access-disabled-outline.js'
+  import I from '@iconify-icons/material-symbols/desktop-access-disabled-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

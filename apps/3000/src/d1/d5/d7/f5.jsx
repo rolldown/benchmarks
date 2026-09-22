@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/send-and-archive.js'
+  import I from '@iconify-icons/material-symbols/send-and-archive'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

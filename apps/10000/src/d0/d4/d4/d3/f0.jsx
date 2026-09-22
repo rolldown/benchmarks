@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/cool-to-dry.js'
+  import I from '@iconify-icons/material-symbols/cool-to-dry'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

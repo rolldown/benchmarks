@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/sentiment-neutral.js'
+  import I from '@iconify-icons/material-symbols/sentiment-neutral'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

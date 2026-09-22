@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/connect-without-contact.js'
+  import I from '@iconify-icons/material-symbols/connect-without-contact'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/directions-subway.js'
+  import I from '@iconify-icons/material-symbols/directions-subway'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

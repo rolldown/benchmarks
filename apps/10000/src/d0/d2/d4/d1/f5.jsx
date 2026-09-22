@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/skip-previous-outline.js'
+  import I from '@iconify-icons/material-symbols/skip-previous-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

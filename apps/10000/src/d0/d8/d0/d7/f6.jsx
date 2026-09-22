@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/letter-switch.js'
+  import I from '@iconify-icons/material-symbols/letter-switch'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

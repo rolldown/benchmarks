@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/format-letter-spacing-standard.js'
+  import I from '@iconify-icons/material-symbols/format-letter-spacing-standard'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

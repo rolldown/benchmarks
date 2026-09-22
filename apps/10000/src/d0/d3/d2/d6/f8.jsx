@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/phone-missed-sharp.js'
+  import I from '@iconify-icons/material-symbols/phone-missed-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

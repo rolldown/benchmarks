@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/whatshot-outline.js'
+  import I from '@iconify-icons/material-symbols/whatshot-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

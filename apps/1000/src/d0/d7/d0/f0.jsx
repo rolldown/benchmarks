@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/monitor-weight-loss.js'
+  import I from '@iconify-icons/material-symbols/monitor-weight-loss'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

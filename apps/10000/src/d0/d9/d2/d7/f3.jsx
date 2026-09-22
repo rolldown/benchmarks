@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/magnification-large-outline.js'
+  import I from '@iconify-icons/material-symbols/magnification-large-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

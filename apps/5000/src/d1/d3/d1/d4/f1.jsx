@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/brush.js'
+  import I from '@iconify-icons/material-symbols/brush'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

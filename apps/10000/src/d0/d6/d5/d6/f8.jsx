@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/arrow-back-ios-rounded.js'
+  import I from '@iconify-icons/material-symbols/arrow-back-ios-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/android-family-link-outline.js'
+  import I from '@iconify-icons/material-symbols/android-family-link-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

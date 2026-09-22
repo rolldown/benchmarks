@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/strikethrough-s-rounded.js'
+  import I from '@iconify-icons/material-symbols/strikethrough-s-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

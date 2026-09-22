@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/fire-extinguisher.js'
+  import I from '@iconify-icons/material-symbols/fire-extinguisher'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

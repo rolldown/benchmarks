@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/oxygen-saturation-sharp.js'
+  import I from '@iconify-icons/material-symbols/oxygen-saturation-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

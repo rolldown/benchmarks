@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/skip-previous-sharp.js'
+  import I from '@iconify-icons/material-symbols/skip-previous-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

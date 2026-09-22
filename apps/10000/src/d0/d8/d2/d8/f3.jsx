@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/slide-library.js'
+  import I from '@iconify-icons/material-symbols/slide-library'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

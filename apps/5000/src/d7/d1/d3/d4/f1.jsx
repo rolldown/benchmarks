@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/garden-cart-rounded.js'
+  import I from '@iconify-icons/material-symbols/garden-cart-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

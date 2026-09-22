@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nest-wake-on-press-outline.js'
+  import I from '@iconify-icons/material-symbols/nest-wake-on-press-outline'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

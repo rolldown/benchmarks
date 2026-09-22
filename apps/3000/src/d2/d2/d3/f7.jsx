@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/backup-table.js'
+  import I from '@iconify-icons/material-symbols/backup-table'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

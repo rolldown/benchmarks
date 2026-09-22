@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/signal-cellular-1-bar-sharp.js'
+  import I from '@iconify-icons/material-symbols/signal-cellular-1-bar-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

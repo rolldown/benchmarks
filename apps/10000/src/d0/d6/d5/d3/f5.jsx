@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/edit-calendar-outline-rounded.js'
+  import I from '@iconify-icons/material-symbols/edit-calendar-outline-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

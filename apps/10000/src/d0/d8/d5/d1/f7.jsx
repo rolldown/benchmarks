@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/ice-skating.js'
+  import I from '@iconify-icons/material-symbols/ice-skating'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/brand-awareness-rounded.js'
+  import I from '@iconify-icons/material-symbols/brand-awareness-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/center-focus-strong.js'
+  import I from '@iconify-icons/material-symbols/center-focus-strong'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

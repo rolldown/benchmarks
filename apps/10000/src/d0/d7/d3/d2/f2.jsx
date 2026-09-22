@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/format-text-overflow-sharp.js'
+  import I from '@iconify-icons/material-symbols/format-text-overflow-sharp'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

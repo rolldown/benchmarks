@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/swap-vert.js'
+  import I from '@iconify-icons/material-symbols/swap-vert'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/perm-device-information.js'
+  import I from '@iconify-icons/material-symbols/perm-device-information'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

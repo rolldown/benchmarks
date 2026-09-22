@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/clock-loader-20.js'
+  import I from '@iconify-icons/material-symbols/clock-loader-20'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

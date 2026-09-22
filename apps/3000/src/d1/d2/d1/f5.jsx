@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nest-clock-farsight-analog.js'
+  import I from '@iconify-icons/material-symbols/nest-clock-farsight-analog'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

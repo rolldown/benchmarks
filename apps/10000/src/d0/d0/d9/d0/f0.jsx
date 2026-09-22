@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/taunt-rounded.js'
+  import I from '@iconify-icons/material-symbols/taunt-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

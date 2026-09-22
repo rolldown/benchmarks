@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/local-post-office.js'
+  import I from '@iconify-icons/material-symbols/local-post-office'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

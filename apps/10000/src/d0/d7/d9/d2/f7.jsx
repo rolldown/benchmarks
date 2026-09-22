@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/nest-farsight-weather.js'
+  import I from '@iconify-icons/material-symbols/nest-farsight-weather'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

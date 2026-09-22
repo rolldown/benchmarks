@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/location-chip.js'
+  import I from '@iconify-icons/material-symbols/location-chip'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/local-pharmacy.js'
+  import I from '@iconify-icons/material-symbols/local-pharmacy'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

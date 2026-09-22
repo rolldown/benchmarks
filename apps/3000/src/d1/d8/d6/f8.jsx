@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/timelapse.js'
+  import I from '@iconify-icons/material-symbols/timelapse'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

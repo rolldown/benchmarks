@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/file-save-off-rounded.js'
+  import I from '@iconify-icons/material-symbols/file-save-off-rounded'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {

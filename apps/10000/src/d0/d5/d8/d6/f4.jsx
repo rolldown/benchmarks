@@ -1,5 +1,5 @@
 import React from 'react'
-  import I from '@iconify-icons/material-symbols/time-auto.js'
+  import I from '@iconify-icons/material-symbols/time-auto'
   import { Icon } from '@iconify/react/dist/offline';
   
   function Component() {
