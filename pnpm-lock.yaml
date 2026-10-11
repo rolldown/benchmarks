@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@iconify-icons/material-symbols':
-        specifier: 2.0.4
-        version: 2.0.4
+        specifier: 2.0.5
+        version: 2.0.5
       '@iconify/react':
         specifier: 6.0.2
         version: 6.0.2(react@19.3.0)
@@ -315,8 +315,8 @@ packages:
   '@fastify/deepmerge@2.0.2':
     resolution: {integrity: sha512-3wuLdX5iiiYeZWP6bQrjqhrcvBIf0NHbQH1Ur1WbHvoiuTYUEItgygea3zs8aHpiitn0lOB8gX20u1qO+FDm7Q==}
 
-  '@iconify-icons/material-symbols@2.0.4':
-    resolution: {integrity: sha512-/7N+NqTHXU6BhAYVLBtlvM7U5qdDZaknfDYlOYyvuI1fuNDBmvHxJXMbxcvTCYVjDDfAn8Cc0K4G14nGNnYupw==}
+  '@iconify-icons/material-symbols@2.0.5':
+    resolution: {integrity: sha512-2h/ioNpjThv6PvE136uVD3Sjm9as8YNhNS4pNVnnzAaIcU+ODrzlQnVGbjPvPflav4Us8RTu/oWHK/a73NUGuA==}
 
   '@iconify/react@6.0.2':
     resolution: {integrity: sha512-SMmC2sactfpJD427WJEDN6PMyznTFMhByK9yLW0gOTtnjzzbsi/Ke/XqsumsavFPwNiXs8jSiYeZTmLCLwO+Fg==}
@@ -1981,7 +1981,7 @@ snapshots:
 
   '@fastify/deepmerge@2.0.2': {}
 
-  '@iconify-icons/material-symbols@2.0.4':
+  '@iconify-icons/material-symbols@2.0.5':
     dependencies:
       '@iconify/types': 2.0.0
 
