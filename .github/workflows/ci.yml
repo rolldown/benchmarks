@@ -77,6 +77,17 @@ jobs:
           node --run build:rolldown
           ls -lh dist-rolldown
 
+      - name: Test Rolldown PR build
+        working-directory: apps/10000
+        run: |
+          node --run build:rolldown-preview
+          node --run build:rolldown-preview-cold
+          ROLLDOWN_FS_TIMES=1 node --run build:rolldown-preview-cache
+          ROLLDOWN_FS_TIMES=1 node --run build:rolldown-preview-cache
+          ls -lh dist-rolldown-preview dist-rolldown-preview-cache
+          cmp dist-rolldown-preview/main.js dist-rolldown-preview-cache/main.js
+          cmp dist-rolldown-preview/main.js dist-rolldown-preview-cold/main.js
+
       - name: Test esbuild build
         working-directory: apps/10000
         run: |

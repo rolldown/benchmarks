@@ -1,0 +1,10 @@
+{
+  "name": "rolldown-preview",
+  "private": true,
+  "bin": {
+    "rolldown-preview": "./cli.mjs"
+  },
+  "dependencies": {
+    "rolldown": "https://pkg.pr.new/rolldown/rolldown@5815f1e"
+  }
+}
