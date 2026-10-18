@@ -74,13 +74,16 @@ function escapeShellArg(arg) {
 }
 
 // Run benchmark for all tools
-const tools = ['vite', 'rsbuild', 'rspack', 'rollup', 'rolldown', 'esbuild', 'bun'];
+const tools = ['vite', 'rsbuild', 'rspack', 'rollup', 'rolldown', 'rolldown-preview', 'rolldown-preview-cache', 'rolldown-preview-cold', 'esbuild', 'bun'];
 const toolDisplayNames = {
   'vite': 'vite',
   'rsbuild': 'rsbuild',
   'rspack': 'rspack',
   'rollup': 'rollup',
   'rolldown': 'rolldown',
+  'rolldown-preview': 'rolldown PR',
+  'rolldown-preview-cache': 'rolldown PR, warm cache',
+  'rolldown-preview-cold': 'rolldown PR, cold cache',
   'esbuild': 'esbuild',
   'bun': 'bun'
 };
@@ -180,6 +183,9 @@ function getToolVersions() {
     'rspack': 'pnpm rspack --version',
     'rollup': 'pnpm rollup --version',
     'rolldown': 'pnpm rolldown --version',
+    'rolldown-preview': 'node tools/rolldown-preview/cli.mjs --version',
+    'rolldown-preview-cache': 'node tools/rolldown-preview/cli.mjs --version',
+    'rolldown-preview-cold': 'node tools/rolldown-preview/cli.mjs --version',
     'esbuild': 'pnpm esbuild --version',
     'bun': 'bun --version',
   };
@@ -199,7 +205,7 @@ function getToolVersions() {
       // - "rspack/1.6.1 darwin-arm64 node-v24.11.0" (rspack)
       // - "Rsbuild v1.6.3\n\nrsbuild/1.6.3 ..." (rsbuild)
       // - "rolldown v1.0.0-beta.48" (rolldown)
-      const match = output.match(/(?:^|[/\s]v?)(\d+\.\d+\.\d+(?:-[^\s]+)?)/);
+      const match = output.match(/(?:^|[/\s]v?)(\d+\.\d+\.\d+(?:[-+][^\s]+)?)/);
       versions[tool] = match ? match[1] : 'unknown';
     } catch (error) {
       versions[tool] = 'unknown';

@@ -7,6 +7,9 @@
     "build:vite": "vite build",
     "build:rsbuild": "rsbuild build",
     "build:rolldown": "rolldown build --config rolldown.config.mjs",
+    "build:rolldown-preview": "rolldown-preview build --config rolldown-preview.config.mjs",
+    "build:rolldown-preview-cache": "rolldown-preview build --config rolldown-preview-cache.config.mjs",
+    "build:rolldown-preview-cold": "rolldown-preview build --config rolldown-preview-cold.config.mjs",
     "build:rspack": "rspack build --config rspack.config.mjs",
     "build:rollup": "rollup --config rollup.config.mjs",
     "build:esbuild": "esbuild ./src/index.jsx --bundle --outdir=dist-esbuild --minify --sourcemap --legal-comments=none",
@@ -15,6 +18,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "rolldown-preview": "workspace:*"
+  },
   "dependencies": {}
 }
